@@ -1,0 +1,47 @@
+div {
+    font-size: 18px ;
+    margin:0 400px;
+}
+
+
+header {
+    background-color:#A52A2A;
+    margin: 0px 520px 0px 600px ;
+
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.sunset {
+    text-align: center;
+    padding: 0 200px 0 200px;
+}
+.cars {
+    border: dashed;
+}
+.car {
+    width: 408px;
+    margin: auto;
+}
+
+    footer {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin: auto ;
+    width: 759px;
+    height: 25px;
+}
+.ItaBlue{
+    font-style: italic;
+    color: blue;
+}
+.blue {
+    color: blue;
+}
+.bold {
+    font-weight: bold;
+}
