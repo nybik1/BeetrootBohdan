@@ -3,12 +3,12 @@ p {
     margin:0 400px;
 }
 
-
 header {
     background-color:#A52A2A;
     margin: 0px 550px 0px 575px ;
 
 }
+
 h1 {
     text-align: center;
     color: white;
@@ -18,15 +18,17 @@ h1 {
     text-align: center;
     padding: 0 200px 0 200px;
 }
-.cars {
+
+.car {
     border: dashed;
 }
-.car {
+
+.cars {
     width: 408px;
     margin: auto;
 }
 
-    footer {
+footer {
     font-size: 20px;
     text-align: center;
     color: white;
@@ -35,13 +37,16 @@ h1 {
     width: 759px;
     height: 25px;
 }
+
 .ItaBlue{
     font-style: italic;
     color: blue;
 }
+
 .blue {
     color: blue;
 }
+
 .bold {
     font-weight: bold;
 }
