@@ -1,0 +1,54 @@
+body {
+    background-color: #E5E5E5;
+}
+
+.maincontainer {
+    background-color: white;
+    width: 1200px;
+    height: 249px;
+    margin: auto;
+}
+
+.lampLeft {
+    display: inline-block;
+    width: calc(100% / 3);
+    text-align: center;
+    padding-left: 17px;
+}
+
+.lampCenter {
+    display: inline-block;
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+.lampRight {
+    display: inline-block;
+    width: calc(100% / 3);
+    text-align: center;
+    padding-right: 17px;
+}
+
+.Ptittle {
+    color: #414141;
+    margin-top: 20px;
+    margin-bottom: 14px;
+}
+
+p {
+    color: #6C6C6C;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.explanation {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 14px;
+}
