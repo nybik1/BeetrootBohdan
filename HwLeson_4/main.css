@@ -10,23 +10,24 @@ body {
 }
 
 .lampLeft {
-    display: inline-block;
+    display: block;
+    float: left;
     width: calc(100% / 3);
     text-align: center;
-    padding-left: 17px;
 }
 
 .lampCenter {
-    display: inline-block;
+    display: block;
+    float: left;
     width: calc(100% / 3);
     text-align: center;
 }
 
 .lampRight {
-    display: inline-block;
+    display: block;
+    float: left;
     width: calc(100% / 3);
     text-align: center;
-    padding-right: 17px;
 }
 
 .Ptittle {
