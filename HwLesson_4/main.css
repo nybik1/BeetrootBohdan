@@ -10,25 +10,7 @@ body {
     text-align: center;
 }
 
-.lampLeft {
-    display: block;
-    width: calc(100% / 3);
-    height: 202px;
-    margin-top: 23px;
-    float: left;
-    text-align: center;
-}
-
-.lampCenter {
-    display: block;
-    width: calc(100% / 3);
-    height: 202px;
-    margin-top: 23px;
-    float: left;
-    text-align: center;
-}
-
-.lampRight {
+.lamp {
     display: block;
     width: calc(100% / 3);
     height: 202px;
