@@ -1,11 +1,11 @@
 * {
     transition: all .1s ease-in;
     box-sizing: border-box;
-    font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
 }
 
 body {
     background-color: #2B81AC;
+    font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
 }
 
 .Forecast {
@@ -35,7 +35,7 @@ div {
     opacity: 1;
 }
 
-.list-cities li {
+.city {
     display: inline-block;
     font-size: 50px;
     text-align: center;
@@ -106,5 +106,5 @@ li>p {
 .wish {
     font-size: 40px;
     color: white;
-    margin-left: 520px;
+    text-align: center;
 }
