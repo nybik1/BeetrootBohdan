@@ -1,0 +1,12 @@
+.list-cities {
+    font-size: 0px;
+    text-align: center;
+    width: 1200px;
+}
+
+.list-cities li {
+    display: inline-block;
+    background-color: orange;
+    font-size: 100px;
+    width: 300px;
+}
