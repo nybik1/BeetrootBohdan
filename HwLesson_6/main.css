@@ -61,6 +61,8 @@ main {
     border: 1px solid #ececec;
     width: 236px;
     height: 420px;
+    color: #1b1b1b;
+    ;
 }
 
 .item:nth-child(2) {
@@ -68,6 +70,15 @@ main {
     border: 1px solid #0ec8cb;
     width: 236px;
     height: 420px;
+    color: #ffffff;
+}
+
+.item:not(:nth-child(2)) p {
+    color: #777777;
+}
+
+.item:nth-child(2) p {
+    color: #ffffff;
 }
 
 .anchor {
@@ -88,6 +99,7 @@ main {
 
 .item h3 {
     margin-top: 63px;
+    text-transform: uppercase;
 }
 
 .item p {
