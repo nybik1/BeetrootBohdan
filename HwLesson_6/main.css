@@ -2,25 +2,18 @@
     box-sizing: border-box;
 }
 
-header {
-    margin: auto;
-    width: 940px;
-    text-align: center;
-}
-
-.tittle p {
+.main-header p {
     color: #898f99;
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 700;
     line-height: 30px;
     text-transform: uppercase;
-    text-align: center;
     padding-top: 143px;
     margin-bottom: 35px;
 }
 
-.tittle h1 {
+.main-header h1 {
     color: #0ec8cb;
     font-family: Montserrat;
     font-size: 48px;
@@ -30,7 +23,7 @@ header {
     margin-bottom: 44px;
 }
 
-.tittle h2 {
+.main-header h2 {
     color: #999999;
     font-family: "PT Sans";
     font-size: 18px;
@@ -40,20 +33,11 @@ header {
     margin-bottom: 108px;
 }
 
-main {
-    margin: auto;
-    width: 940px;
-}
-
 .container {
-    text-align: center;
+    width: 940px;
     margin: auto;
     display: flex;
-}
-
-.item {
     text-align: center;
-    margin-bottom: 138px;
 }
 
 .item:not(:nth-child(2)) {
