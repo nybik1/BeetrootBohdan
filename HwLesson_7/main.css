@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    padding: 50px 0 50px;
+    width: 1600px;
+    margin: auto;
+}
+
+.container {
+    margin: auto;
+    padding-left: 121px;
+    width: 1400px;
+    height: 940px;
+    box-shadow: 0 4px 68px rgba(0, 0, 0, 0.1);
+}
+
+.name {
+    padding-top: 140px;
+    margin-bottom: 39px;
+    color: #171717;
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.content {
+    width: 1141px;
+    height: 500px;
+    font-family: Lato;
+}
+
+.content p:nth-child(1):first-letter {
+    font-family: "Playfair Display";
+    font-size: 110px;
+    font-weight: 400;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #171717;
+}
+
+.content p {
+    margin-bottom: 50px;
+    color: rgba(23, 23, 23, 0.7);
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: -0.09px;
+    line-height: 34px;
+}
+
+.content p:first-letter {
+    color: #171717;
+}
+
+.quote {
+    font-size: 24px;
+    letter-spacing: -0.12px;
+    font-family: Lato;
+    font-style: italic;
+}
+
+button {
+    width: 264px;
+    height: 68px;
+    margin-top: 40px;
+    cursor: pointer;
+    border: 2px solid #eaa258;
+    background-color: transparent;
+    color: #eaa258;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 34px;
+    text-transform: uppercase;
+}
