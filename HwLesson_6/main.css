@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+.container {
+    width: 940px;
+    margin: auto;
+    text-align: center;
+}
+
 .main-header p {
     color: #898f99;
     font-family: Montserrat;
@@ -31,13 +37,13 @@
     line-height: 30px;
     text-transform: uppercase;
     margin-bottom: 108px;
+    width: 532px;
+    margin: auto;
 }
 
-.container {
-    width: 940px;
-    margin: auto;
+.container-item {
     display: flex;
-    text-align: center;
+    margin-top: 108px;
 }
 
 .item:not(:nth-child(2)) {
