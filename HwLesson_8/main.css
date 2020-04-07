@@ -32,23 +32,19 @@ body {
     font-family: "Raleway-Black", sans-serif;
 }
 
-.container {
-    text-align: center;
-    margin: auto;
-    width: 1170;
-}
-
-header {
+.main-header {
     padding-top: 100px;
 }
 
-.container h1 {
+.main-header__tittle {
+    text-align: center;
     font-size: 90px;
     font-weight: 700;
     color: #ffffff;
 }
 
-header p {
+.main-header__descr {
+    text-align: center;
     width: 563px;
     height: 66px;
     margin: auto;
