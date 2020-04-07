@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "Raleway";
+    src: url(/HwLesson_9/font/raleway/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Raleway - Heavy";
+    src: url(/HwLesson_9/font/raleway/Raleway-Heavy.ttf);
+}
+
+.page {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container-main {
+    position: relative;
+    height: 100vh;
+    min-width: 1500px;
+    background-image: url(/HwLesson_9/img/main-bg.png);
+    background-position: right 5% top 5%;
+    background-repeat: no-repeat;
+}
+
+.main-header {
+    display: flex;
+}
+
+.main-header__logo {
+    padding-top: 50px;
+    padding-left: 165px;
+}
+
+.main-header__nav {
+    position: absolute;
+    top: 69px;
+    right: 164px;
+}
+
+.nav-main__nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav__list-item {
+    margin-right: 40px;
+    color: #262626;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-family: "Raleway";
+}
+
+.nav__list-item--active {
+    margin-right: 40px;
+    color: #262626;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-family: "Raleway";
+    position: relative;
+}
+
+.nav__list-item--active::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    margin-top: -9px;
+    background-color: #ff6033;
+}
+
+.main-title {
+    width: 368px;
+    position: absolute;
+    left: 165px;
+    top: 360px;
+    color: #262626;
+}
+
+.title {
+    font-family: "Raleway - Heavy";
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.title_decr {
+    font-family: "Raleway";
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 27px;
+}
+
+.title_get {
+    border-style: none;
+    border-color: transparent;
+    width: 200px;
+    height: 55px;
+    background-color: #ff6033;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 27px;
+    text-transform: uppercase;
+    font-family: "Raleway";
+}
+
+.title_get:hover {
+    cursor: pointer;
+    transform: scale(0.5, 0.5);
+    transition: 3s;
+}
