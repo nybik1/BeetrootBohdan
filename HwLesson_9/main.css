@@ -24,27 +24,23 @@
     background-size: 100%;
 }
 
-.main-header {
-    display: flex;
-}
-
-.main-header__logo {
+.container-main__logo {
     padding-top: 50px;
     padding-left: 165px;
 }
 
-.main-header__nav {
+.container-main__navpanel {
     position: absolute;
     top: 69px;
     right: 164px;
 }
 
-.nav-main__nav {
+.navpanel__list {
     display: flex;
     list-style: none;
 }
 
-.nav__list-item {
+.navpanel__list__item {
     margin-right: 40px;
     color: #262626;
     font-size: 16px;
@@ -52,17 +48,27 @@
     line-height: 25px;
     text-transform: uppercase;
     font-family: "Raleway";
-}
-
-.nav__list-item:hover {
-    cursor: pointer;
-}
-
-.nav__list-item--active {
     position: relative;
 }
 
-.nav__list-item--active::before {
+.navpanel__list__item:hover {
+    cursor: pointer;
+}
+
+.navpanel__list__item:not(:first-child):hover::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    margin-top: -9px;
+    background-color: #ff6033;
+}
+
+.navpanel__list__item--active {
+    position: relative;
+}
+
+.navpanel__list__item--active::before {
     content: '';
     position: absolute;
     height: 3px;
@@ -79,20 +85,20 @@
     font-family: "Raleway";
 }
 
-.title {
+.main-title__title {
     font-family: "Raleway - Heavy";
     font-size: 60px;
     font-weight: 400;
     line-height: 25px;
 }
 
-.title_decr {
+.title__decr {
     font-size: 17px;
     font-weight: 300;
     line-height: 27px;
 }
 
-.title_get {
+.title__get {
     border-style: none;
     border-color: transparent;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -108,18 +114,15 @@
     font-family: "Raleway";
 }
 
-.title_get:hover {
+.title__get:hover {
     cursor: pointer;
     transform: scale(0.5, 0.5);
     transition: 3s;
 }
 
-.main_img-scroll {
-    text-align: center;
-}
-
-.main_img-scroll__mouse {
+.main__img-scroll {
     position: absolute;
+    right: 50%;
     bottom: 70px;
 }
 
