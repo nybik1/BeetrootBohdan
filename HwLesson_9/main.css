@@ -40,7 +40,7 @@
     list-style: none;
 }
 
-.nav__item {
+.main-nav__item {
     margin-right: 40px;
     color: #262626;
     font-size: 16px;
@@ -51,11 +51,11 @@
     position: relative;
 }
 
-.nav__item:hover {
+.main-nav__item:hover {
     cursor: pointer;
 }
 
-.nav__item:not(:first-child):hover::before {
+.main-nav__item:not(:first-child):hover::before {
     content: '';
     position: absolute;
     height: 3px;
@@ -64,11 +64,11 @@
     background-color: #ff6033;
 }
 
-.nav__item--active {
+.main-nav__item--active {
     position: relative;
 }
 
-.nav__item--active::before {
+.main-nav__item--active::before {
     content: '';
     position: absolute;
     height: 3px;
