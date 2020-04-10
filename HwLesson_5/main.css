@@ -1,0 +1,110 @@
+* {
+    transition: all .1s ease-in;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2B81AC;
+    font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+}
+
+.forecast {
+    font-size: 50px;
+    color: white;
+    margin-left: 550px;
+}
+
+div {
+    margin: 20px 20px;
+    background-color: #3399CC;
+}
+
+.list-cities {
+    font-size: 0px;
+    width: 1400px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.list-cities:hover .city {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.list-cities .city:hover {
+    opacity: 1;
+}
+
+.city {
+    display: inline-block;
+    font-size: 50px;
+    text-align: center;
+    height: 180px;
+    border: solid white;
+    color: white;
+}
+
+.city>p {
+    opacity: 70%;
+}
+
+.list-cities .city:nth-child(1) {
+    background-color: #3399CC;
+    width: 50%;
+}
+
+.list-cities .city:nth-child(2) {
+    background-color: #33CCCC;
+    width: 25%;
+}
+
+.list-cities .city:nth-child(3) {
+    background-color: #996699;
+    width: 25%;
+}
+
+.list-cities .city:nth-child(4) {
+    background-color: #C24747;
+    width: 25%;
+}
+
+.list-cities .city:nth-child(5) {
+    background-color: #E2674A;
+    width: 25%;
+}
+
+.list-cities .city:nth-child(6) {
+    background-color: #FFCC66;
+    width: 25%;
+}
+
+.list-cities .city:nth-child(7) {
+    background-color: #99CC99;
+    width: 25%;
+}
+
+.list-cities .city:nth-child(8) {
+    background-color: #669999;
+    width: 25%;
+}
+
+.list-cities .city:nth-child(9) {
+    background-color: #CC6699;
+    width: 50%;
+}
+
+.list-cities .city:nth-child(10) {
+    background-color: #339966;
+    width: 25%;
+}
+
+.list-cities .city:nth-child(11) {
+    background-color: #666699;
+    width: 100%;
+}
+
+.wish {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
