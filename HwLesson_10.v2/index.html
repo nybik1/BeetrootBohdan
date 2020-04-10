@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="main-header">
+            <h1 class="main-header__title">Contact</h1>
+            <p class="main-header__descr">For new projects, ideas, business or anything
+                you'd like to discuss, contact with me!</p>
+        </header>
+
+        <main class="content">
+            <div class="content__form">
+                <form action="">
+                    <div class="form__grid">
+                        <div class="form__item form__item--active">
+                            <input minlength="3" class="form__input form__input--active" type="text" name="name"
+                                placeholder="Your name">
+                            <div class="form__error">Please, enter your name</div>
+                        </div>
+                        <div class="form__item">
+                            <input class="form__input" type="email" name="email" placeholder="Your email">
+                            <div class="form__error">Email must contain @</div>
+                        </div>
+                        <div class="form__item">
+                            <input minlength="4" class="form__input" type="tel" name="phone"
+                                placeholder="Your phone number">
+                            <div class="form__error">Please, enter your phone number</div>
+                        </div>
+                        <div class="form__item">
+                            <textarea class="form__message" placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="content__contact">
+                <div class="contact__item">
+                    <p class="item__title">adress</p>
+                    <p class="item__desc">123 City name, Street, City, Country</p>
+                </div>
+                <div class="contact__item">
+                    <p class="item__title">email</p>
+                    <p class="item__desc">cahee@domain.com</p>
+                </div>
+                <div class="contact__item">
+                    <p class="item__title">phone</p>
+                    <p class="item__desc">+012 345 6789</p>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__rights">© 2015 Company. All right reserved.</div>
+            <div class="footer__logo"><img src="./img/logo-small.png"></div>
+            <div class="footer__made">Made with love by Auskteez</div>
+        </footer>
+    </div>
+</body>
+
+</html>
