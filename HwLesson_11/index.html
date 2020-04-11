@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container-main">
+            <div class="container-main__logo">
+                <img src="/HwLesson_9/img//logo.png" alt="logo"></div>
+            <nav class="container-main__navpanel">
+                <ul class="main-nav">
+                    <li class="main-nav__item main-nav__item--active">home</li>
+                    <li class="main-nav__item">about</li>
+                    <li class="main-nav__item">services</li>
+                    <li class="main-nav__item">gallery</li>
+                    <li class="main-nav__item">blog</li>
+                    <li class="main-nav__item">contact</li>
+                </ul>
+            </nav>
+            <div class="main-title">
+                <h2 class="main-title__title">Fresh life</h2>
+                <p class="main-title__descr">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad
+                    minim
+                    veniam, quis nostrud exercitation ullamco.</p>
+                <button class="main-title__btn">get free now</button>
+            </div>
+            <div class="main__img-scroll"><a href="#about"><img class="main_img-scroll__mouse" alt="PcMouse"
+                        src="/HwLesson_9/img/scroll.png"></a>
+            </div>
+        </div>
+
+
+        <div class="about"> <a name="about"></a>
+            <img class="about__img" src="/HwLesson_9/img/raspberry.png" alt="raspberry">
+            <div class="about__text">
+                <h1 class="about__text__heading">About Us</h1>
+                <div class="about__text__descr">
+                    <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                        ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate
+                        velit
+                        esse cillum.</p>
+                    <p>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium
+                        doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <div class="wrapper">
+            <header class="main-header">
+                <h1 class="main-header__tittle">Blog</h1>
+                <p class="main-header__descr">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+            </header>
+            <main class="container">
+                <div class="gallery">
+
+                    <div class="post">
+                        <img class="post__image" src="img/qiwi.png" alt="qiwi">
+                        <div class="post__label">
+                            <p class="post__day">20</p>
+                            <p class="post__month">nov</p>
+                        </div>
+                        <div class="post__description">
+                            <p class="post__text">Green Smoothies: Too Much of a Good Thing?</p>
+                            <p class="post__author">By Auskteez - 2 hours ago</p>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <img class="post__image" src="img/soup.png" alt="soup">
+                        <div class="post__label">
+                            <p class="post__day">14</p>
+                            <p class="post__month">nov</p>
+                        </div>
+                        <div class="post__description">
+                            <p class="post__text">Growing Food and a “Thirst” for Innovation</p>
+                            <address class="post__author">By Auskteez - <time datetime="2020-01-04T08:30">2 hours
+                                    ago</time>
+                            </address>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <img class="post__image" src="img/berry.png" alt="berry">
+                        <div class="post__label">
+                            <p class="post__day">10</p>
+                            <p class="post__month">nov</p>
+                        </div>
+                        <div class="post__description">
+                            <p class="post__text">Pesticides & Food: What You Need to Know</p>
+                            <address class="post__author">By Auskteez - <time datetime="2020-01-04T08:30">2 hours
+                                    ago</time>
+                            </address>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="btn-wrapper">
+                    <button class="btn-wrapper__button">View more</button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div class="form">
+        <div class="container">
+            <header class="main-header">
+                <h1 class="main-header__title">Contact</h1>
+                <p class="main-header__descr">For new projects, ideas, business or anything
+                    you'd like to discuss, contact with me!</p>
+            </header>
+
+            <main class="content">
+                <div class="content__form">
+                    <form action="">
+                        <div class="form__grid">
+                            <div class="form__item form__item--active">
+                                <input minlength="3" class="form__input form__input--active" type="text" name="name"
+                                    placeholder="Your name">
+                                <div class="form__error">Please, enter your name</div>
+                            </div>
+                            <div class="form__item">
+                                <input class="form__input" type="email" name="email" placeholder="Your email">
+                                <div class="form__error">Email must contain @</div>
+                            </div>
+                            <div class="form__item">
+                                <input minlength="4" class="form__input" type="tel" name="phone"
+                                    placeholder="Your phone number">
+                                <div class="form__error">Please, enter your phone number</div>
+                            </div>
+                            <div class="form__item">
+                                <textarea class="form__message" placeholder="Your message"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="content__contact">
+                    <div class="contact__item">
+                        <p class="item__title">adress</p>
+                        <p class="item__desc">123 City name, Street, City, Country</p>
+                    </div>
+                    <div class="contact__item">
+                        <p class="item__title">email</p>
+                        <p class="item__desc">cahee@domain.com</p>
+                    </div>
+                    <div class="contact__item">
+                        <p class="item__title">phone</p>
+                        <p class="item__desc">+012 345 6789</p>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="footer__rights">© 2015 Company. All right reserved.</div>
+                <div class="footer__logo"><img src="./img/logo-small.png"></div>
+                <div class="footer__made">Made with love by Auskteez</div>
+            </footer>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
