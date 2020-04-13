@@ -1,0 +1,54 @@
+.our-services {
+    background-color: #70bfff;
+    width: 100%;
+    height: 790px;
+    display: flex;
+    position: relative;
+    font-family: Ralewey;
+    
+
+    .services {
+    padding-top: 179px;
+
+    .list {
+    font-size: 20;
+    font-family: Raleway;
+    list-style: none;
+        
+        &__item {
+            background-color: white;
+            margin-bottom: 20px;
+            width: 400px;
+            height: 100px;
+            position: relative;
+            padding: 41px 172px 40px 71px;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 27px;  
+
+           }
+    .icon {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:0;
+    right: 0;
+    padding: 26px;
+    border-left: 1px solid #9d9d9d;
+           }
+       }
+}
+    .tomato {
+        position: absolute;
+        top: 100px;
+        right: 165px;
+    }
+   .services__title {
+       position: absolute;
+       top: 231px;
+       right: 1px;
+       font-size:90px;
+       width: 539px;
+       color:white;
+   }
+}

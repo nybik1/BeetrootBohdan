@@ -1,38 +1,16 @@
-@font-face {
-    font-family: "Raleway";
-    src: url(./fonts/Raleway-Regular.ttf);
-}
-
-@font-face {
-    font-family: "Raleway - Light";
-    src: url(./fonts/Raleway-Light.ttf);
-}
-
-@font-face {
-    font-family: "Raleway - Bold";
-    src: url(./fonts/Raleway-Bold.ttf);
-}
-
-* {
-    margin: 0;
-}
-
-body {
+.form{
     background-image: url(../img/bg.png);
     background-size: cover;
 }
 
-.container {
-    margin: auto;
-}
 
 .main-header {
     text-align: center;
     color: #262626;
     font-family: Raleway;
-    width: 337px;
-    margin: auto;
     padding-top: 101px;
+    width: 342px;
+    margin: auto;
 }
 
 .main-header__title {
@@ -43,7 +21,6 @@ body {
 
 .content {
     display: flex;
-    padding-left: 165px;
     margin-top: 46px;
 }
 

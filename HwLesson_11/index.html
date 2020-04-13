@@ -10,10 +10,10 @@
 
 <body>
     <div class="header">
-        <div class="container-main">
-            <div class="container-main__logo">
-                <img src="/HwLesson_9/img//logo.png" alt="logo"></div>
-            <nav class="container-main__navpanel">
+        <div class="container">
+            <div class="header__logo">
+                <img src="./img/logo.png" alt="logo"></div>
+            <nav class="header__navpanel">
                 <ul class="main-nav">
                     <li class="main-nav__item main-nav__item--active">home</li>
                     <li class="main-nav__item">about</li>
@@ -32,13 +32,14 @@
                 <button class="main-title__btn">get free now</button>
             </div>
             <div class="main__img-scroll"><a href="#about"><img class="main_img-scroll__mouse" alt="PcMouse"
-                        src="/HwLesson_9/img/scroll.png"></a>
+                        src="./img/scroll.png"></a>
             </div>
         </div>
+    </div>
 
-
-        <div class="about"> <a name="about"></a>
-            <img class="about__img" src="/HwLesson_9/img/raspberry.png" alt="raspberry">
+    <div class="about"> <a name="about"></a>
+        <div class="container">
+            <img class="about__img" src="./img/raspberry.png" alt="raspberry">
             <div class="about__text">
                 <h1 class="about__text__heading">About Us</h1>
                 <div class="about__text__descr">
@@ -49,6 +50,7 @@
                         voluptate
                         velit
                         esse cillum.</p>
+
                     <p>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
                         voluptatem accusantium
                         doloremque
@@ -58,11 +60,80 @@
         </div>
     </div>
 
-    <div class="gallery">
-        <div class="wrapper">
-            <header class="main-header">
-                <h1 class="main-header__tittle">Blog</h1>
-                <p class="main-header__descr">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    <div class="our-services">
+        <div class="container">
+            <div class="services">
+                <ul class="list">
+                    <li class="list__item">Online Shoping
+                        <div class="icon"><img src="./img/icon.svg"></div>
+                    </li>
+
+                    <li class="list__item">Online Shoping
+                        <div class="icon"><img src="./img/icon.svg"></div>
+
+                    </li>
+                    <li class="list__item">Online Shoping
+                        <div class="icon"><img src="./img/icon.svg"></div>
+
+                    </li>
+                    <li class="list__item">Online Shoping
+                        <div class="icon"><img src="./img/icon.svg"></div>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="tomato"><img src="./img/tomato.png">
+                <h1 class="services__title">Our Services</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery-page">
+        <div class="container">
+            <header class="gallery-page__header">
+                <h1 class="header__title">Gallery</h1>
+                <p class="header__desc">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </header>
+            <div class="gallery">
+                <div class="gallery__block1">
+                    <div class="block1__item--big"><img src="./img/peaches.jpg"></div>
+                    <div class="block1__item--small">
+                        <div class="block1__item"><img src="./img/lohina.jpg"></div>
+                        <div class="block1__item"><img src="./img/mulberry.jpg"></div>
+                    </div>
+                </div>
+                <div class="gallery__block2">
+                    <div class="block2__item"><img src="./img/block2.1.jpg"></div>
+                    <div class="block2__item"><img src="./img/block2.2.jpg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subscribe">
+        <div class="container">
+            <div class="subscribe__header">
+                <h2 class="subscribe__title">Subscribe To Us</h2>
+                <p class="subscribe__desc">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <form>
+                <input class="subscribe__email" required placeholder="Your email adress" type="email">
+                <button class="subscribe__btn">Subscribe</button>
+            </form>
+
+        </div>
+    </div>
+
+
+    <div class="blog">
+        <div class="container">
+            <header class="blog-header">
+                <h1 class="blog-header__tittle">Blog</h1>
+                <p class="blog-header__descr">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation
                     ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
             </header>
@@ -165,12 +236,12 @@
                     </div>
                 </div>
             </main>
-            <footer class="footer">
-                <div class="footer__rights">© 2015 Company. All right reserved.</div>
-                <div class="footer__logo"><img src="./img/logo-small.png"></div>
-                <div class="footer__made">Made with love by Auskteez</div>
-            </footer>
         </div>
+        <footer class="footer">
+            <div class="footer__rights">© 2015 Company. All right reserved.</div>
+            <div class="footer__logo"><img src="./img/logo-small.png"></div>
+            <div class="footer__made">Made with love by Auskteez</div>
+        </footer>
 
     </div>
 

@@ -1,0 +1,124 @@
+.blog {
+    background-color:#b07cf7;
+    min-height: 864px;
+    
+}
+
+
+.blog-header {
+    padding-top: 100px;
+}
+
+.blog-header__tittle {
+    text-align: center;
+    font-size: 90px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.blog-header__descr {
+    text-align: center;
+    width: 563px;
+    height: 66px;
+    margin: auto;
+    margin-top: 30px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.post {
+    width: 450px;
+    height: 377px;
+    position: relative;
+}
+
+.post:nth-child(1n+1) {
+    margin-right: 30px;
+}
+
+.post__label {
+    width: 65px;
+    height: 65px;
+    background-color: #262626;
+    opacity: 0.7;
+    border-radius: 5px;
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    padding-top: 9px;
+}
+
+.post__day, .post__month {
+    color: #fff;
+    font-weight: bold;
+    line-height: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.post__day {
+    font-size: 32px;
+    font-family: "Raleway";
+    
+}
+
+.post__month {
+    font-size: 21px;
+    font-family: "Raleway - Heavy";
+}
+
+.post__description {
+    position: absolute;
+    bottom: 25%;
+    left: 40px;
+    width: 307px;
+}
+
+.post__text {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 2rem;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-right: 30px;
+}
+
+.post__author {
+    color: #fff;
+    font-style: normal;
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+.btn-wrapper {
+    text-align: center;
+}
+
+.btn-wrapper__button {
+    width: 200px;
+    height: 55px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border: none;
+    background-color: #f72b3b;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.btn-wrapper__button:hover {
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+    transition: 2s;
+}
