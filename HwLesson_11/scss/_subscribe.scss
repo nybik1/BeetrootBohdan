@@ -42,7 +42,7 @@
         font-family: Raleway;
         font-size: 20px;
         &:hover {
-            cursor: pointer;
+            @include btn-hover;
         }
     }
     }

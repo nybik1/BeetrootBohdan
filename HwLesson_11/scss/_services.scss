@@ -11,17 +11,15 @@
     }
     
     .services-list {
-    font-size: 20;
+    font-size: 20px;
     width: 400px;
     font-family: Raleway;
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
         
             &__content {
             display: flex;
-            flex-direction: row;
         }
         
         &__item {

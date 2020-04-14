@@ -1,0 +1,6 @@
+@mixin btn-hover {
+    transform: scale(1.2, 1.2);
+    box-shadow: 60px 16px teal;
+    cursor: pointer;
+    transition: 2s;
+    }
