@@ -11,13 +11,13 @@ height: 1536px;
     text-align: center;
           
         .header__title {
-            font-size: 90px;
+            font-size: $fzH;
             margin-bottom: 28px;
             font-weight: 700;
         }
         
         .header__desc {
-            font-size: 17px;
+            font-size: $fzP;
             font-weight: 300;
             line-height: 27px;
             margin-bottom: 46px;
@@ -29,7 +29,6 @@ height: 1536px;
         
         .gallery__block1 {
             display: flex;
-            margin-bottom: 30px;
             
             .block1__item--big {
                 margin-right: 30px;

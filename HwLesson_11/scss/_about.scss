@@ -1,0 +1,29 @@
+.about {
+    height: 700px;
+    background-color: #00c4c4;
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.about__text {
+    width: 499px;
+    color: #ffffff;
+    font-family: Raleway;
+}
+
+.about__text__heading {
+    font-size: $fzH;
+    font-weight: 700;
+    margin-bottom: 34px;
+}
+
+.about__text__descr {
+    font-size: $fzP;
+    font-weight: 300;
+}
+}

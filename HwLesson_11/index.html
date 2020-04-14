@@ -39,22 +39,24 @@
 
     <div class="about"> <a name="about"></a>
         <div class="container">
-            <img class="about__img" src="./img/raspberry.png" alt="raspberry">
-            <div class="about__text">
-                <h1 class="about__text__heading">About Us</h1>
-                <div class="about__text__descr">
-                    <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation
-                        ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate
-                        velit
-                        esse cillum.</p>
+            <div class="about-content">
+                <div class="about__img"><img src="./img/raspberry.png" alt="raspberry"></div>
+                <div class="about__text">
+                    <h1 class="about__text__heading">About Us</h1>
+                    <div class="about__text__descr">
+                        <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate
+                            velit
+                            esse cillum.</p>
 
-                    <p>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium
-                        doloremque
-                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+                        <p>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem accusantium
+                            doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -62,26 +64,28 @@
 
     <div class="our-services">
         <div class="container">
-            <div class="services">
-                <ul class="list">
-                    <li class="list__item">Online Shoping
-                        <div class="icon"><img src="./img/icon.svg"></div>
-                    </li>
+            <section class="services">
+                <ul class="services-list">
+                    <div class="services-list__content">
+                        <li class="services-list__item">Online Shoping</li>
+                        <img class="services-list__icon" src="./img/icon.svg">
+                    </div>
 
-                    <li class="list__item">Online Shoping
-                        <div class="icon"><img src="./img/icon.svg"></div>
+                    <div class="services-list__content">
+                        <li class="services-list__item">Quality Product</li>
+                        <img class="services-list__icon" src="./img/quality.svg">
+                    </div>
+                    <div class="services-list__content">
+                        <li class="services-list__item">Domestic & International Delivery</li>
+                        <img class="services-list__icon" src="./img/delivery.svg">
+                    </div>
 
-                    </li>
-                    <li class="list__item">Online Shoping
-                        <div class="icon"><img src="./img/icon.svg"></div>
-
-                    </li>
-                    <li class="list__item">Online Shoping
-                        <div class="icon"><img src="./img/icon.svg"></div>
-
-                    </li>
+                    <div class="services-list__content">
+                        <li class="services-list__item">Well Organized</li>
+                        <img class="services-list__icon" src="./img/ogranize.svg">
+                    </div>
                 </ul>
-            </div>
+            </section>
             <div class="tomato"><img src="./img/tomato.png">
                 <h1 class="services__title">Our Services</h1>
             </div>
@@ -119,7 +123,7 @@
                 <p class="subscribe__desc">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
-            <form>
+            <form class="form-sub">
                 <input class="subscribe__email" required placeholder="Your email adress" type="email">
                 <button class="subscribe__btn">Subscribe</button>
             </form>

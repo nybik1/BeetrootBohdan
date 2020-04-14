@@ -1,13 +1,3 @@
-@font-face {
-    font-family: "Raleway";
-    src: url(/HwLesson_9/font/raleway/Raleway-Regular.ttf);
-}
-
-@font-face {
-    font-family: "Raleway - Heavy";
-    src: url(/HwLesson_9/font/raleway/Raleway-Heavy.ttf);
-}
-
 .page {
     box-sizing: border-box;
     margin: 0;
@@ -127,36 +117,3 @@
     bottom: 70px;
 }
 
-.about {
-    position: relative;
-    height: 700px;
-    min-width: 1500px;
-    display: flex;
-    background-color: #00c4c4;
-}
-
-.about__img {
-    padding-top: 71px;
-    width: 566px;
-    height: 559px;
-}
-
-.about__text {
-    right: 166px;
-    top: 180px;
-    position: absolute;
-    width: 499px;
-    color: #ffffff;
-    font-family: Raleway;
-}
-
-.about__text__heading {
-    font-size: 90px;
-    font-weight: 700;
-    margin-bottom: 34px;
-}
-
-.about__text__descr {
-    font-size: 17px;
-    font-weight: 300;
-}
