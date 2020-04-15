@@ -16,11 +16,11 @@
             <nav class="header__navpanel">
                 <ul class="main-nav">
                     <li class="main-nav__item main-nav__item--active">home</li>
-                    <li class="main-nav__item">about</li>
-                    <li class="main-nav__item">services</li>
-                    <li class="main-nav__item">gallery</li>
-                    <li class="main-nav__item">blog</li>
-                    <li class="main-nav__item">contact</li>
+                    <li class="main-nav__item"><a href="#about" class="main-nav__link">about</a></li>
+                    <li class="main-nav__item"><a href="#services" class="main-nav__link">services</a></li>
+                    <li class="main-nav__item"><a href="#gallery" class="main-nav__link">gallery</a></li>
+                    <li class="main-nav__item"><a href="#blog" class="main-nav__link">blog</a></li>
+                    <li class="main-nav__item"><a href="#contact" class="main-nav__link">contact</a></li>
                 </ul>
             </nav>
             <div class="main-title">
@@ -39,11 +39,11 @@
 
     <div class="about"> <a name="about"></a>
         <div class="container">
-            <div class="about-content">
+            <div class="about__content">
                 <div class="about__img"><img src="./img/raspberry.png" alt="raspberry"></div>
                 <div class="about__text">
-                    <h1 class="about__text__heading">About Us</h1>
-                    <div class="about__text__descr">
+                    <h1 class="about__heading">About Us</h1>
+                    <div class="about__descr">
                         <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud
                             exercitation
                             ullamco
@@ -62,7 +62,7 @@
         </div>
     </div>
 
-    <div class="our-services">
+    <div class="our-services"><a name="services"></a>
         <div class="container">
             <section class="services">
                 <ul class="services-list">
@@ -92,11 +92,12 @@
         </div>
     </div>
 
-    <div class="gallery-page">
+    <div class="gallery-page"> <a name="gallery"></a>
         <div class="container">
             <header class="gallery-page__header">
-                <h1 class="header__title">Gallery</h1>
-                <p class="header__desc">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                <h1 class="gallery-page__title">Gallery</h1>
+                <p class="gallery-page__desc">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.</p>
             </header>
@@ -113,6 +114,7 @@
                     <div class="block2__item"><img src="./img/block2.2.jpg"></div>
                 </div>
             </div>
+            <div class="btn-wrapper"><button class="gallery-page__btn">View more</button></div>
         </div>
     </div>
 
@@ -123,7 +125,7 @@
                 <p class="subscribe__desc">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
-            <form class="form-sub">
+            <form class="subscribe__form">
                 <input class="subscribe__email" required placeholder="Your email adress" type="email">
                 <button class="subscribe__btn">Subscribe</button>
             </form>
@@ -132,7 +134,7 @@
     </div>
 
 
-    <div class="blog">
+    <div class="blog"> <a name="blog"></a>
         <div class="container">
             <header class="blog-header">
                 <h1 class="blog-header__tittle">Blog</h1>
@@ -142,7 +144,7 @@
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
             </header>
             <main class="container">
-                <div class="gallery">
+                <div class="gallery-blog">
 
                     <div class="post">
                         <img class="post__image" src="img/qiwi.png" alt="qiwi">
@@ -193,17 +195,17 @@
         </div>
     </div>
 
-    <div class="form">
+    <div class="contact"> <a name="contact"></a>
         <div class="container">
-            <header class="main-header">
-                <h1 class="main-header__title">Contact</h1>
-                <p class="main-header__descr">For new projects, ideas, business or anything
+            <header class="contact__main-header">
+                <h1 class="contact__title">Contact</h1>
+                <p class="contact__descr">For new projects, ideas, business or anything
                     you'd like to discuss, contact with me!</p>
             </header>
 
             <main class="content">
                 <div class="content__form">
-                    <form action="">
+                    <form class="form" action="">
                         <div class="form__grid">
                             <div class="form__item form__item--active">
                                 <input minlength="3" class="form__input form__input--active" type="text" name="name"
@@ -225,18 +227,18 @@
                         </div>
                     </form>
                 </div>
-                <div class="content__contact">
-                    <div class="contact__item">
-                        <p class="item__title">adress</p>
-                        <p class="item__desc">123 City name, Street, City, Country</p>
+                <div class="content__our-contacts">
+                    <div class="contact__text">
+                        <p class="contact__type">adress</p>
+                        <p class="contact__info">123 City name, Street, City, Country</p>
                     </div>
-                    <div class="contact__item">
-                        <p class="item__title">email</p>
-                        <p class="item__desc">cahee@domain.com</p>
+                    <div class="contact__text">
+                        <p class="contact__type">email</p>
+                        <p class="contact__info">cahee@domain.com</p>
                     </div>
-                    <div class="contact__item">
-                        <p class="item__title">phone</p>
-                        <p class="item__desc">+012 345 6789</p>
+                    <div class="contact__text">
+                        <p class="contact__type">phone</p>
+                        <p class="contact__info">+012 345 6789</p>
                     </div>
                 </div>
             </main>
@@ -245,14 +247,14 @@
             <div class="footer__rights">© 2015 Company. All right reserved.</div>
             <div class="footer__logo"><img src="./img/logo-small.png"></div>
             <div class="footer__made">Made with love by Auskteez</div>
-            <!-- <div class="footer__social">
+            <div class="footer__social">
                 <svg class="footer__icons">
                     <use xlink:href="./scss/icons.svg#facebook"></use>
                 </svg>
                 <svg class="footer__icons">
                     <use xlink:href="./scss/icons.svg#ytb"></use>
                 </svg>
-            </div> -->
+            </div>
         </footer>
 
     </div>

@@ -12,26 +12,26 @@
     background-image: url(../img/main-bg.png);
     background-position: left 40px top -5px;
     background-size: 100%;
-}
 
-.header__logo {
+
+    &__logo {
     padding-top: 50px;
 }
 
-.header__navpanel {
+    &__navpanel {
     position: absolute;
     top: 69px;
     right: 164px;
 }
-
+}
 .main-nav {
     display: flex;
     list-style: none;
-}
 
-.main-nav__item {
+
+    &__item {
     margin-right: 40px;
-    color: #262626;
+    color: $main-color;
     font-size: 16px;
     font-weight: 700;
     line-height: 25px;
@@ -40,11 +40,11 @@
     position: relative;
 }
 
-.main-nav__item:hover {
+    &__item:hover {
     cursor: pointer;
 }
 
-.main-nav__item:not(:first-child):hover::before {
+    &__item:not(:first-child):hover::before {
     content: '';
     position: absolute;
     height: 3px;
@@ -53,28 +53,34 @@
     background-color: #ff6033;
 }
 
-.main-nav__item--active {
+    &__item--active {
     position: relative;
 }
 
-.main-nav__item--active::before {
+    &__item--active::before {
     content: '';
     position: absolute;
     height: 3px;
     width: 50px;
     margin-top: -9px;
     background-color: #ff6033;
+    }
+
+    &__link {
+    text-decoration: none;
+    color: $main-color;
+    }
 }
 
 .main-title {
     width: 368px;
     margin-top: 360px;
-    color: #262626;
+    color: $main-color;
     font-family: "Raleway";
     text-align: left;
-}
 
-.main-title__title {
+
+    &__title {
     font-family: "Raleway - Heavy";
     font-size: 60px;
     font-weight: 400;
@@ -82,14 +88,14 @@
     margin-bottom: 34px;
 }
 
-.main-title__descr {
+    &__descr {
     font-size: 17px;
     font-weight: 300;
     line-height: 27px;
     margin-bottom: 31px;
 }
 
-.main-title__btn {
+    &__btn {
     border-style: none;
     border-color: transparent;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -105,8 +111,10 @@
     font-family: "Raleway";
 }
 
-.main-title__btn:hover {
+    &__btn:hover {
     @include btn-hover;}
+
+}
 
 .main__img-scroll {
     position: absolute;
