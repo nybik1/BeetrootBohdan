@@ -5,7 +5,7 @@ height: 1536px;
 
     &__header {
     color: $main-color;
-    width: 577px;
+    max-width: 577px;
     margin: auto;
     padding-top: 100px;
     text-align: center;
@@ -15,6 +15,9 @@ height: 1536px;
     font-size: $fzH;
     margin-bottom: 28px;
     font-weight: 700;
+    @media screen and (max-width:1200px){
+        font-size: 60px;
+    }
     }
         
     &__desc {
@@ -22,6 +25,9 @@ height: 1536px;
     font-weight: 300;
     line-height: 27px;
     margin-bottom: 46px;
+    @media screen and (max-width:1200px){
+        font-size: 15px;
+    }
     }
 
     &__btn {
@@ -48,31 +54,58 @@ height: 1536px;
     text-align: center;
 }
 
+.gallery img {
+    max-width: 100%;
+}
 
-    .gallery {
-        display: inline-block;
-    }
 
-        
         .gallery__block1 {
             display: flex;
+            @media screen and (max-width:1200px){
+                flex-wrap: wrap;
+            }
+
+            .block1__item--small {
+            display: flex;
+            flex-direction: column;
+
+                @media screen and (max-width:1200px) {
+                    display: flex;
+                    flex-direction: row;
+                    margin: auto;
+                    margin-top: 10px;
+                }
+            
+            }
             
             .block1__item--big {
                 margin-right: 30px;
                 width: 70%;
                 height: 550px;
-            }
-
-            .block1__item {
-                width: 30%;
-                margin-bottom: 30px;
-                margin-right: 30px;
-                height: 260px;
+                @media screen and (max-width:1200px) {
+                    width: 100%;
+                    text-align: center;
+                    margin: 0;
+                    
+                }
             }
             
             }
+
+            .block1__item {
+                margin-bottom: 30px;
+                margin-right: 30px;
+                height: 260px;
+                @media screen and (max-width:1200px){
+                    margin: 0;
+                }
+            }
+            
         .gallery__block2 {
             display: flex;
+            @media screen and (max-width:1200px){
+                display: none;
+            }
             .block2__item {
                 margin-right: 30px;
             }

@@ -30,6 +30,9 @@
 .content {
     display: flex;
     margin-top: 46px;
+    @media screen and (max-width:868px) {
+        flex-direction: column;
+    }
 
         &__form {
         min-width: 500px;
@@ -48,7 +51,7 @@
 }
 
     &__input {
-    width: 100%;
+    width: 500px;
     height: 50px;
     border-style: none;
     background-color: rgba(0, 196, 196, 0.3);
@@ -56,6 +59,9 @@
     padding: 0 20px;
     font-family: Raleway;
     font-size: 15px;
+    @media screen and (max-width:868px){
+        max-width: 100%;
+    }
 }
 
     &__input:valid {
@@ -108,7 +114,7 @@
     &__message {
     background-color: rgba(0, 196, 196, 0.5);
     border-style: none;
-    width: 100%;
+    width: 500px;
     height: 250px;
     padding: 5px 20px;
     color: #ffffff;
@@ -124,6 +130,12 @@
     .content {
     &__our-contacts {
     padding-left: 170px;
+    @media screen and (max-width:868px){
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: space-around;
+    }
 }
 }
 
@@ -150,6 +162,11 @@
     height: 90px;
     background-color: #262626;
     font-family: "Raleway";
+    &__logo {
+        @media screen and (max-width:868px) {
+            display: none;
+        }
+    }
     &__social {
         position: relative;
         height: 100%;

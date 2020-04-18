@@ -11,25 +11,27 @@
 <body>
     <div class="header">
         <div class="container">
-            <div class="header__logo">
-                <img src="./img/logo.png" alt="logo"></div>
-            <nav class="header__navpanel">
-                <ul class="main-nav">
-                    <li class="main-nav__item main-nav__item--active">home</li>
-                    <li class="main-nav__item"><a href="#about" class="main-nav__link">about</a></li>
-                    <li class="main-nav__item"><a href="#services" class="main-nav__link">services</a></li>
-                    <li class="main-nav__item"><a href="#gallery" class="main-nav__link">gallery</a></li>
-                    <li class="main-nav__item"><a href="#blog" class="main-nav__link">blog</a></li>
-                    <li class="main-nav__item"><a href="#contact" class="main-nav__link">contact</a></li>
-                </ul>
-            </nav>
+            <div class="header__content">
+                <div class="header__logo">
+                    <img src="./img/logo.png" alt="logo"></div>
+                <nav class="header__navpanel">
+                    <ul class="main-nav">
+                        <li class="main-nav__item main-nav__item--active">home</li>
+                        <li class="main-nav__item"><a href="#about" class="main-nav__link">about</a></li>
+                        <li class="main-nav__item"><a href="#services" class="main-nav__link">services</a></li>
+                        <li class="main-nav__item"><a href="#gallery" class="main-nav__link">gallery</a></li>
+                        <li class="main-nav__item"><a href="#blog" class="main-nav__link">blog</a></li>
+                        <li class="main-nav__item"><a href="#contact" class="main-nav__link">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div class="main-title">
                 <h2 class="main-title__title">Fresh life</h2>
                 <p class="main-title__descr">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad
                     minim
                     veniam, quis nostrud exercitation ullamco.</p>
-                <button class="main-title__btn">get free now</button>
+                <div class="main-title__btn-wrapper"><button class="main-title__btn">get free now</button></div>
             </div>
             <div class="main__img-scroll"><a href="#about"><img class="main_img-scroll__mouse" alt="PcMouse"
                         src="./img/scroll.png"></a>
@@ -64,7 +66,7 @@
 
     <div class="our-services"><a name="services"></a>
         <div class="container">
-            <section class="services">
+            <div class="services">
                 <ul class="services-list">
                     <div class="services-list__content">
                         <li class="services-list__item">Online Shoping</li>
@@ -85,7 +87,7 @@
                         <img class="services-list__icon" src="./img/ogranize.svg">
                     </div>
                 </ul>
-            </section>
+            </div>
             <div class="tomato"><img src="./img/tomato.png">
                 <h1 class="services__title">Our Services</h1>
             </div>
@@ -247,14 +249,14 @@
             <div class="footer__rights">© 2015 Company. All right reserved.</div>
             <div class="footer__logo"><img src="./img/logo-small.png"></div>
             <div class="footer__made">Made with love by Auskteez</div>
-            <div class="footer__social">
+            <!-- <div class="footer__social">
                 <svg class="footer__icons">
                     <use xlink:href="./scss/icons.svg#facebook"></use>
                 </svg>
                 <svg class="footer__icons">
                     <use xlink:href="./scss/icons.svg#ytb"></use>
                 </svg>
-            </div>
+            </div> -->
         </footer>
 
     </div>
