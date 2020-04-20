@@ -1,8 +1,7 @@
 .about {
-    height: 700px;
     background-color: #00c4c4;
     @media screen and (max-width:968px) {
-        height: 300px;
+        height: auto;
     }
 
     &__content {
@@ -20,6 +19,7 @@
     @media screen and (max-width:968px){
         text-align: center;
         margin: auto;
+        
     }
 }
 
@@ -37,6 +37,7 @@
     font-weight: 300;
     @media screen and (max-width:430px) {
         font-size: 15px;
+        margin-bottom: 20px;
     }
 }
     &__img {

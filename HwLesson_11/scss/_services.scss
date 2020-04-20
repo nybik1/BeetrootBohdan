@@ -1,12 +1,27 @@
 .our-services {
     background-color: #70bfff;
     width: 100%;
-    height: 790px;
     font-family: Ralewey;
     
     
    .container {
         display: flex;
+        justify-content: space-between;
+        background: url(../img/tomato.png);
+        background-repeat: no-repeat;
+        background-position: right 15px top 100px;
+        padding: 0 15px 40px;
+        @media screen and (max-width:1200px) {
+            background: none;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    }
+
+    .services {
+        @media screen and (max-width: 460px){
+            width: 100%;
+        }
     }
 
     .services-list {
@@ -17,56 +32,83 @@
     font-family: Raleway;
     list-style: none;
     flex-direction: column;
-    @media screen and (max-width:1200px) {
-        width: 300px;
+    @media screen and (max-width: 1200px){
+        margin: 16px 0;
+        width: auto;
     }
     @media screen and (max-width:970px) {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
     }
         
             &__content {
             display: flex;
+            height: 100px;
+            margin-bottom: 20px;
+            background-color: white;
+            @media screen and (max-width: 460px) {
+                height: auto;
+            }
         }
         
             &__item {
             display: flex;
-            background-color: white;    
-            margin-bottom: 20px;
-            height: 100px;
-            width: 75%;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
+            background-color: white;    
+            width: 75%;
             text-align: center;
             font-size: 20px;
             font-weight: 700;
             line-height: 27px;
+            @media screen and (max-width: 460px) {
+                font-size: 16px;
+                text-align: left;
+                padding: 16px 16px;
+            }
 
            }
-            &__icon {
+
+           &__icon-wrap {
             width: 25%;
-            height: 100px;
-            padding: 26px;
             border-left: 1px solid #9d9d9d;
-            background-color: #ffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                
+            &-inner {
+                width: 54px;
+                height: 54px;
+                @media screen and (max-width: 460px) {
+                    height: 36px;
+                    width: 36px;
+                }
+            }
            }
+
+            &__icon {
+            max-width: 100%;
+            }
        }
 }
     .tomato {
-        margin-top: 100px;
-        margin-left: 208px;
         position: relative;
-
-        >img {
+        > img {
             max-width: 100%;
-        }
+        } 
     }
+
    .services__title {
-       position: absolute;
-       top: 231px;
-       right: 1px;
        font-size:$fzH;
+       margin-top: 331px;
        width: 539px;
-       color:white;
+       color:#fff;
+       @media screen and (max-width:1200px) {
+        margin-top: 20px;
+        font-size: 70px;
+        text-align: center;
+       }
+       @media screen and (max-width: 460px) {
+           font-size: 36px;
+       }
    }

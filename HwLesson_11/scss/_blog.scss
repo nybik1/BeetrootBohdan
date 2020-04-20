@@ -1,6 +1,5 @@
 .blog {
     background-color:#b07cf7;
-    min-height: 864px;
     
 }
 
@@ -51,10 +50,25 @@
 
 
 .post {
-    width: 450px;
+    max-width: 450px;
     height: 377px;
-    position: relative;
     text-align: center;
+    position: relative;
+    
+
+    &__image {
+        
+        
+        @media screen and (max-width: 930px) {
+            max-width: 100%;
+        }
+        @media screen and (max-width: 930px) {
+            width: 320px;
+            height: 260px;
+        }
+    }
+}
+
    
 
 .post:not(:first-child) {
@@ -62,7 +76,6 @@
     @media screen and (max-width: 930px) {
         margin-left: 0px;
     }
-}
 }
 
 .post__label {
@@ -119,7 +132,7 @@
     font-size: 0.8rem;
     font-weight: 300;
     text-align: left;
-}
+}   
 
 .btn-wrapper {
     text-align: center;
@@ -135,6 +148,7 @@
     font-size: 1.3rem;
     font-weight: 300;
     text-transform: uppercase;
+    margin-bottom: 120px;
 }
 
 .btn-wrapper__button:hover {
