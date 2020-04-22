@@ -1,0 +1,35 @@
+.services {
+    background-image: url(../img/servicesbg.png);
+    background-size: cover;
+    background-position: center;
+
+    &__wrapper {
+        max-width: 902px;
+        min-height: 488px;
+        padding-top: 120px;
+    }
+
+    &__content{
+        text-align: center;
+        margin: auto;
+        color: #fff;
+
+        fieldset {
+            border-color: white;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__title {
+        @include title;
+        margin-bottom: 65px;
+        padding: 0 100px;
+    }
+    
+    &__descr {
+        @include descr;
+        max-width: 553px;
+        margin: auto;
+    }
+
+}

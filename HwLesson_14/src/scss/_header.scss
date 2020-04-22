@@ -1,0 +1,36 @@
+.header {
+    background-image: url(../img/header-bg.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+
+    &__info {
+    max-width: 591px;
+    margin: auto;
+    text-align: center;
+    padding-top: 285px;
+    color: #fff;
+    }
+
+    &__icon {
+        margin-bottom: 97px;
+    }
+
+    &__title {
+        font-size: 54px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 53px;
+        letter-spacing: 8.62px;
+    }
+    
+    &__descr {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 29px;
+        text-transform: uppercase;
+        letter-spacing: 0.9px;
+    }
+
+}

@@ -1,0 +1,24 @@
+.about {
+&__wrapper {
+    margin: 160px auto;
+}
+    
+
+    &__content{
+        text-align: center;
+        margin: auto;
+        color: #3c3c3c;
+    }
+
+    &__title {
+        @include title;
+        padding: 0 100px;
+    }
+    
+    &__descr {
+        @include descr;
+        max-width: 553px;
+        margin: auto;
+        padding-bottom: 30px;
+    }
+}

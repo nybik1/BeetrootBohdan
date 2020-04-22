@@ -1,0 +1,35 @@
+.what-do {
+    &__wrapper{
+        text-align: center;
+        color: #3c3c3c;
+        margin: 115px auto;
+    }
+
+    &__title {
+        @include title;
+        padding: 0 100px;
+    }
+
+    fieldset {
+        padding-bottom: 92px;
+    }
+}
+
+.direction {
+    margin-top: 115px;
+    &__icon {
+        margin-bottom: 40px;
+    }
+    &__name {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 37px;
+}
+    &__descr {
+        @include descr;
+        font-size: 14px;
+        max-width: 549px;
+        margin: auto;
+    }
+}

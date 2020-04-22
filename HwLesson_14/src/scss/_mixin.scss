@@ -1,0 +1,14 @@
+@mixin title {
+    font-size: 34px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 65px;
+        letter-spacing: 8.95px;
+    
+}
+
+@mixin descr {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 25.89px;  
+    }

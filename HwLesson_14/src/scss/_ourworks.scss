@@ -1,0 +1,22 @@
+.our-works {
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        // :not(:first-child) {
+        //     margin-left: 10px;
+        // }
+}
+.block__small , .block__big {
+    position: relative;
+}
+.block__work-name {
+    position: absolute;
+    left: 43px;
+    bottom: 43px;
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+}
