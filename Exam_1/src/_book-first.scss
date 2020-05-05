@@ -5,7 +5,7 @@
     background-position: center;
     padding: 229px 0 100px;
     @media screen and (max-width:540px) {
-        padding: 100px 0 ;
+        padding: 50px 0 ;
     }
 
     &__wrapper {
@@ -19,6 +19,7 @@
     line-height: 26px;
     @media screen and (max-width:1024px){
         font-size: 16px;
+        margin: auto;
         }
         @media screen and (max-width:540px) {
             padding: 20px;
@@ -49,5 +50,13 @@
 
     &__btn {
         @include button-style;
+    }
+    &__btn-wrapper {
+        @media screen and (max-width:1024px) {
+        width: 225px;
+        height: 60px;
+        text-align: center;
+        margin: auto;
+    }
     }
 }

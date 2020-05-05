@@ -27,10 +27,15 @@
         margin: auto;
         justify-content: space-around;
     }
-    &__icon {
-        :hover {
+
+    &__icon-wrap {
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        &:hover .footer__icon {
+
             fill: #5474fd;
-            cursor: pointer;
-        }
     }
+}
+   
 }

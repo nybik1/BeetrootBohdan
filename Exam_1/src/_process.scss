@@ -18,7 +18,8 @@
             padding: 10px;
         }
 }
-    &__wrapper::before{content: "";
+    &__wrapper::before{
+        content: "";
 		position: absolute;
 		width: 62%;
 	    height: 100px;
@@ -31,6 +32,8 @@
         overflow: hidden;
         @media screen and (max-width:1024px){
         display: none;
+        z-index: 1;
+
         
     }
 }
@@ -61,6 +64,9 @@
         height: 96px;
         margin-bottom: 15px;
         margin: auto;
+        position: relative;
+        z-index: 2;
+        background-color: #333333;
         @media screen and (max-width:540px) {
             width: 40px;
             height: 40px;
@@ -76,5 +82,9 @@
             width: 30px;
             height: 30px;   
         }
+    }
+    &__act {
+        position: relative;
+        z-index: 3;
     }
 }

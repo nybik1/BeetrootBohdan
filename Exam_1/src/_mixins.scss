@@ -1,5 +1,5 @@
 @mixin button-style {
-        background-color: #5474fd;
+        background:linear-gradient(45deg, rgb(73, 107, 254) 50%, rgb(84, 116, 253) 50%);
         width: 225px;
         height: 60px;
         border: none;
@@ -11,10 +11,16 @@
         text-transform: uppercase;
         letter-spacing: 2px;
         cursor: pointer;
+        outline: none;
 
         &:hover {
-            background-color: blue;
-            transition: 1s;
+            background: blue;
+            transition: .5s;
+        }
+
+        @media screen and (max-width:1024px){
+            margin-left: auto;
+
         }
         @media screen and (max-width:540px) {
             width: 150px;
