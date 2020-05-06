@@ -1,0 +1,41 @@
+.footer {
+    background-color: #232323;
+    color: #ffffff;
+    text-align: center;
+    padding: 120px 0 53px;
+    font-family: "Josefin Sans";
+    line-height: 26px;
+
+    &__name {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3.36px;
+        margin-bottom: 15px;
+    }
+    
+    &__slogan {
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 1.6px;
+        margin-bottom: 31px;
+    }
+    
+    &__social {
+        display: flex;
+        max-width: 166px;
+        margin: auto;
+        justify-content: space-around;
+    }
+
+    &__icon-wrap {
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        &:hover .footer__icon {
+
+            fill: #5474fd;
+    }
+}
+   
+}

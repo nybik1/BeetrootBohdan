@@ -1,0 +1,80 @@
+.tourist-review {
+    background-image: url(../img/review-bg-min.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    img {
+        width: 100%;
+        display: block;
+    }
+
+    &__wrapper {
+        padding: 120px 0 200px;
+        text-align: center;
+        @media screen and (max-width:1024px){
+            padding: 60px 0px;
+
+        }
+        @media screen and (max-width:540px) {
+            padding: 50px 0px;
+        }
+}
+
+&__title {
+    @include title;
+    @media screen and (max-width:1024px){
+        font-size: 32px;
+        }
+}
+
+&__content {
+    display: flex;
+    margin-top: 94px;
+    text-align: left;
+    @media screen and (max-width:1024px){
+        flex-direction: column;
+        max-width: 500px;
+        margin: auto;
+        margin-top: 20px;
+        }
+}
+
+&__review {
+    background-color: #333333;
+    padding: 50px 54px 48px 60px;
+    font-weight: 400;
+    line-height: 17px;
+    font-family: "Josefin Sans";
+    flex: 1;
+    @media screen and (max-width:1071px) {
+    padding:40px 40px 40px 40px  
+    }
+    @media screen and (max-width:1024px) {
+    padding: 50px 54px 48px 60px;   
+    }
+    @media screen and (max-width:540px) {
+    padding: 20px;
+    }
+}
+
+&__name {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fefefe;
+    margin-bottom: 33px;
+    @media screen and (max-width:1024px){
+        font-size: 16px;
+        }
+}
+
+
+&__text {
+    color: $descr-color;
+    @include description;
+    @media screen and (max-width:1024px){
+        font-size: 14px;
+        }
+}
+
+
+}
