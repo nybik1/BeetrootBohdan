@@ -1,0 +1,93 @@
+.section1{
+    background-image: url(../img/headerBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 53px 0 53px;
+
+
+    .header{
+        display: flex;
+
+        &__menu{
+            margin-left: 90px;
+            position: sticky;
+            top: 0;
+
+            .menu__list{
+                font-family: "Gotham - Book";
+                list-style: none;
+                display: flex;
+                color: #fff;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+                text-transform: uppercase;
+                justify-content: space-around;
+
+            .menu__item{
+                :not(:last-child){
+                    margin-left: 68px;
+                }
+                scroll-behavior: smooth;
+                transition: 0.5s ease;
+                cursor: pointer;
+            }    
+
+            .menu__link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                white-space: nowrap;
+                color: #fff;
+                text-decoration: none;
+            }
+                
+           
+            .menu__link .unfilled{
+                width: 9px;
+                height: 9px;
+                margin-right: 14px;
+                position: relative;
+                top: -2px;
+            }
+            }
+        }
+
+        &__socials{
+            display: flex;
+            margin-left: 84px;
+            :not(:first-child){
+                padding-left: 20px;
+            }
+        }
+    }
+
+    &__title {
+        font-family: Gotham;
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 22px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #fff;
+        text-align: center;
+        margin-top: 263px;
+    }
+
+    &__subtitle {
+        color: #ffffff;
+        font-family: "Gotham - Book";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        text-transform: uppercase;
+        letter-spacing: 5.4px;
+        text-align: center;
+        margin-top: 39px;
+    }
+
+    &__scrollDown{
+        text-align: center;
+        margin-top: 230px;
+    }
+}
