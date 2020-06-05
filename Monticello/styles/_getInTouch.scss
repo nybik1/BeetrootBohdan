@@ -1,10 +1,10 @@
 .getInTouch {
     width: 770px;
-    padding: 60px 0 80px;
     margin: auto;
-    background-color: cyan;
+    padding-top: 60px;
+    background-color: #fff;
     position: relative;
-    top: -300px;
+    top: -500px;
     
     hr {
         width: 100px;
@@ -31,7 +31,6 @@
     &__contact{
         :not(:last-child){
             padding-bottom: 40px;
-            flex:  0 0 50%;
             margin-right: 53px;
         }
         .contact__item {
@@ -47,7 +46,6 @@
     &__form{
         display: flex;
         flex-direction: column;
-        flex: 0 0 50%;
 
         input {
             border: none;
@@ -66,15 +64,6 @@
 
     &__btn {
         margin-left: auto;
-        width: 140px;
-        height: 50px;
-        border: 1px solid #2c4058;
-        color: #2c4058;
-        font-family: "Gotham - Book";
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 22px;
-        text-transform: uppercase;
-        background-color: #fff;
+        @include button
     }
 }

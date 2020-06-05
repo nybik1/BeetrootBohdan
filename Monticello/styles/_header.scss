@@ -1,72 +1,90 @@
+.header{
+    padding: 20px 0;
+    display: flex;
+    background: linear-gradient(90deg, rgba(84,116,253,1) 29%, rgba(132,0,255,1) 54%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+
+    &__menu{
+        margin-left: 90px;
+
+        .menu__list{
+            font-family: "Gotham - Book";
+            list-style: none;
+            display: flex;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            text-transform: uppercase;
+            justify-content: space-around;
+
+        .menu__item{
+            :not(:last-child){
+                margin-left: 68px;
+            }
+            scroll-behavior: smooth;
+            transition: 0.5s ease;
+            cursor: pointer;
+        }    
+
+        .menu__link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+            color: #fff;
+            text-decoration: none;
+        }
+            
+       
+        .unfilled{
+            width: 9px;
+            height: 9px;
+            margin-right: 14px;
+            position: relative;
+            background-color: transparent;
+            border: 1px #fff solid;
+            border-radius: 50%;
+            top: -2px;
+        }
+        .filled {
+            width: 9px;
+            height: 9px;
+            margin-right: 14px;
+            position: relative;
+            top: -2px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+        }
+    }
+
+    &__socials{
+        display: flex;
+        margin-left: 84px;
+        :not(:first-child){
+            padding-left: 20px;
+        }
+    }
+}
+
 .section1{
     background-image: url(../img/headerBg.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 53px 0 53px;
-
-
-    .header{
-        display: flex;
-
-        &__menu{
-            margin-left: 90px;
-            position: sticky;
-            top: 0;
-
-            .menu__list{
-                font-family: "Gotham - Book";
-                list-style: none;
-                display: flex;
-                color: #fff;
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 22px;
-                text-transform: uppercase;
-                justify-content: space-around;
-
-            .menu__item{
-                :not(:last-child){
-                    margin-left: 68px;
-                }
-                scroll-behavior: smooth;
-                transition: 0.5s ease;
-                cursor: pointer;
-            }    
-
-            .menu__link {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                white-space: nowrap;
-                color: #fff;
-                text-decoration: none;
-            }
-                
-           
-            .menu__link .unfilled{
-                width: 9px;
-                height: 9px;
-                margin-right: 14px;
-                position: relative;
-                top: -2px;
-            }
-            }
-        }
-
-        &__socials{
-            display: flex;
-            margin-left: 84px;
-            :not(:first-child){
-                padding-left: 20px;
-            }
-        }
-    }
+    position: relative;
 
     &__title {
         font-family: Gotham;
         font-size: 80px;
         font-weight: 700;
-        line-height: 22px;
         text-transform: uppercase;
         letter-spacing: 4px;
         color: #fff;
@@ -90,4 +108,32 @@
         text-align: center;
         margin-top: 230px;
     }
+
+    &__slider{
+        .slick-dots{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            width: 30px;
+            top: 50%;
+            right: -250px;
+        }
+    .slick-dots li {
+    margin: 20px 0px; }
+    }
+    .slick-dots button {
+        display: block;
+        padding: 0;
+        border: 1px solid #fff;
+        border-radius: 100%;
+        width: 9px;
+        height: 9px;
+        background-color: transparent;
+        }
+    .slick-dots li.slick-active button {
+        background-color: #fff; }
+        
+    .slick-dots li button:before {
+        font-size: 0px;
+    }   
 }

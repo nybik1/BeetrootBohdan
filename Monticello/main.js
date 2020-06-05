@@ -16,7 +16,33 @@ $(document).ready(function () {
     $(".arrownext").click(function () {
         $(".news__slider").slick("slickNext");
     })
-})
+});
+
+$(document).ready(function () {
+    $(".section1__slider").slick({
+        slidesToShow: 1,
+        arrows: false,
+        dots: true,
+
+    });
+});
+
+
+
+
+
+
+
+$(document).ready(function () {
+    $(".section4__card").magnificPopup({
+        type: "image",
+        removalDelay: 300,
+        mainClass: 'mfp-fade',
+    });
+});
+
+
+
 
 
 $('a[href*="#"]')
@@ -54,3 +80,10 @@ $('a[href*="#"]')
             }
         }
     });
+
+
+
+
+
+
+

@@ -7,64 +7,79 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="./popup/magnific-popup.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="./img/headLogo.svg" alt="OurLogo">
+        </div>
+        <div class="header__menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#about" class="menu__link">
+                        <div class="link filled"></div>
+                        <p>about us</p>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#projects" class="menu__link">
+                        <div class="unfilled"></div>
+                        <p>about us</p>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#news" class="menu__link">
+                        <div class="unfilled"></div>
+                        <p>about us</p>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#get" class="menu__link">
+                        <div class="unfilled"></div>
+                        <p>about us</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__socials">
+            <a href="#" class="header__link" target="_blank">
+                <img src="./img/facebook.svg" alt="" />
+            </a>
+            <a href="#" class="header__link" target="_blank">
+                <img src="./img/twitter.svg" alt="" />
+            </a>
+            <a href="#" class="header__link" target="_blank">
+                <img src="./img/instagram.svg" alt="" />
+            </a>
+        </div>
+    </header>
     <section class="section1" id="header">
         <div class="container">
-            <div class="section1__wrapper">
-                <header class="header">
-                    <div class="header__logo">
-                        <img src="./img/headLogo.svg" alt="OurLogo">
-                    </div>
-                    <div class="header__menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a href="#about" class="menu__link">
-                                    <img class="unfilled" src="./img/Ellipse.svg" alt="">
-                                    <p>about us</p>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#projects" class="menu__link">
-                                    <img class="unfilled" src="./img/Ellipse.svg" alt="">
-                                    <p>about us</p>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#news" class="menu__link">
-                                    <img class="unfilled" src="./img/Ellipse.svg" alt="">
-                                    <p>about us</p>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#get" class="menu__link">
-                                    <img class="unfilled" src="./img/Ellipse.svg" alt="">
-                                    <p>about us</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="header__socials">
-                        <a href="#" class="header__link" target="_blank">
-                            <img src="./img/facebook.svg" alt="" />
-                        </a>
-                        <a href="#" class="header__link" target="_blank">
-                            <img src="./img/twitter.svg" alt="" />
-                        </a>
-                        <a href="#" class="header__link" target="_blank">
-                            <img src="./img/instagram.svg" alt="" />
-                        </a>
-                    </div>
-                </header>
-                <h1 class="section1__title">Simple & mordern</h1>
-                <h3 class="section1__subtitle">We make the world's beautiful every day</h3>
-                <div class="section1__scrollDown">
-                    <a>
-                        <img src="./img/headArrow.png" alt="ScrollDown">
-                    </a>
+            <div class="section1__slider">
+                <div class="section1__wrapper slide1">
+                    <h1 class="section1__title">Simple & mordern</h1>
+                    <h3 class="section1__subtitle">We make the world's beautiful every day</h3>
                 </div>
+                <div class="section1__wrapper slide2">
+                    <h1 class="section1__title">Sharp Minds</h1>
+                    <h3 class="section1__subtitle">Sharp products</h3>
+                </div>
+                <div class="section1__wrapper slide3">
+                    <h1 class="section1__title">Do you have the bunny inside?</h1>
+                    <h3 class="section1__subtitle">He keeps going and going and going</h3>
+                </div>
+                <div class="section1__wrapper slide4">
+                    <h1 class="section1__title">you are original</h1>
+                    <h3 class="section1__subtitle">THINK DIFFERENT</h3>
+                </div>
+            </div>
+            <div class="section1__scrollDown">
+                <a href="#projects">
+                    <img src="./img/headArrow.png" alt="ScrollDown">
+                </a>
             </div>
         </div>
     </section>
@@ -123,10 +138,10 @@
                 </div>
                 <div class="changeSlideBtn">
                     <a class="changeSlideBtn__prev arrowprev">
-                        <img src="./img/arrowprev.svg" alt="">
+                        <img src="./img/prev.svg" alt="">
                     </a>
                     <a class="changeSlideBtn__next arrownext">
-                        <img src="./img/arrownext.svg" alt="">
+                        <img src="./img/next.svg" alt="">
                     </a>
                 </div>
                 <div class="news__block news__slider">
@@ -322,10 +337,18 @@
                     <img src="./img/big.png" alt="">
                 </div>
                 <div class="section4__smallImg">
-                    <img src="./img/small1.png" alt="">
-                    <img src="./img/small2.png" alt="">
-                    <img src="./img/small3.png" alt="">
-                    <img src="./img/small4.png" alt="">
+                    <a class="section4__card" href="./img/small1Modal.png">
+                        <img src="./img/small1.png" alt="">
+                    </a>
+                    <a class="section4__card" href="./img/small2Modal.jpg">
+                        <img src="./img/small2.png" alt="">
+                    </a>
+                    <a class="section4__card" href="./img/small3Modal.jpg">
+                        <img src=" ./img/small3.png" alt="">
+                    </a>
+                    <a class="section4__card" href="./img/small4Modal.png">
+                        <img src="./img/small4.png" alt="">
+                    </a>
                 </div>
             </div>
             <div class="section4__btn-wrapper">
@@ -337,25 +360,26 @@
 
     <div id="map"></div>
 
-    <div class="getInTouch" id="get">
-        <hr>
-        <h4 class="getInTouch__title">get in touch</h4>
-        <div class="getInTouch__content">
-            <div class="getInTouch__contact">
-                <p class="contact__item"><img src="./img/phone.svg">91 Nolan Extensions Suite 670</p>
-                <p class="contact__item"><img src="./img/phone.svg">91 Nolan Extensions Suite 670</p>
-                <p class="contact__item"><img src="./img/phone.svg">91 Nolan Extensions Suite 670</p>
-                <p class="contact__item"><img src="./img/phone.svg">91 Nolan Extensions Suite 670</p>
-            </div>
-            <form action="" class="getInTouch__form">
-                <input type="text" class="getInTouch__name" placeholder="Your name" name="name">
-                <input type="email" class="getInTouch__email" placeholder="Your email" name="email">
-                <button class="getInTouch__btn" type="submit">sumbit</button>
-            </form>
-        </div>
-    </div>
+
 
     <footer class="footer">
+        <div class="getInTouch" id="get">
+            <hr>
+            <h4 class="getInTouch__title">get in touch</h4>
+            <div class="getInTouch__content">
+                <div class="getInTouch__contact">
+                    <p class="contact__item"><img src="./img/phone.svg">91 Nolan Extensions Suite 670</p>
+                    <p class="contact__item"><img src="./img/phone.svg">91 Nolan Extensions Suite 670</p>
+                    <p class="contact__item"><img src="./img/phone.svg">91 Nolan Extensions Suite 670</p>
+                    <p class="contact__item"><img src="./img/phone.svg">91 Nolan Extensions Suite 670</p>
+                </div>
+                <form action="" class="getInTouch__form">
+                    <input type="text" class="getInTouch__name" placeholder="Your name" name="name">
+                    <input type="email" class="getInTouch__email" placeholder="Your email" name="email">
+                    <button class="getInTouch__btn" type="submit">sumbit</button>
+                </form>
+            </div>
+        </div>
         <div class="footer__inner">
             <div class="footer__logo">
                 <a href="#" target="_blank">
@@ -384,6 +408,7 @@
     </footer>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./popup/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="main.js"></script>
     <script src="./map/map.js"></script>
