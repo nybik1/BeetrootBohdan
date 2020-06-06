@@ -7,6 +7,15 @@ $(document).ready(function () {
         centerMode: true,
         autoplay: false,
         autoplaySpeed: 1000,
+        responsive: [
+            {
+                breakpoint: 1350,
+                settings: {
+                    slidesToShow: 2,
+                    dots: false,
+                }
+            }
+        ]
 
     });
 

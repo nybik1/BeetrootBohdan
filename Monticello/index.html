@@ -27,19 +27,19 @@
                 <li class="menu__item">
                     <a href="#projects" class="menu__link">
                         <div class="unfilled"></div>
-                        <p>about us</p>
+                        <p>projects</p>
                     </a>
                 </li>
                 <li class="menu__item">
                     <a href="#news" class="menu__link">
                         <div class="unfilled"></div>
-                        <p>about us</p>
+                        <p>news</p>
                     </a>
                 </li>
                 <li class="menu__item">
                     <a href="#get" class="menu__link">
                         <div class="unfilled"></div>
-                        <p>about us</p>
+                        <p>contact</p>
                     </a>
                 </li>
             </ul>
@@ -56,6 +56,7 @@
             </a>
         </div>
     </header>
+
     <section class="section1" id="header">
         <div class="container">
             <div class="section1__slider">
@@ -93,7 +94,11 @@
             <div class="section2__block1">
                 <div class="section2__content">
                     <div class="section2__images">
-                        <img src="./img/whatwedo1.png" alt="">
+                        <picture>
+                            <source media="(max-width:960px)" srcset="./img/whatwedo1(960px).png">
+                            <source media="(max-width:640px)" srcset=./img/whatwedo1(640px).png>
+                            <img src="./img/whatwedo1.png" alt="">
+                        </picture>
                         <img class="square1" src="./img/whatwedoback1.png" alt="">
                     </div>
                     <div class="section2__text">
@@ -117,15 +122,17 @@
                         <p class="section2__location">New York City, United States - 1776 feet</p>
                     </div>
                     <div class="section2__images">
-                        <img src="./img/whatwedo1.png" alt="">
+                        <picture>
+                            <source media="(max-width:960px)" srcset="./img/whatwedo1(960px).png">
+                            <source media="(max-width:640px)" srcset=./img/whatwedo1(640px).png>
+                            <img src="./img/whatwedo1.png" alt="">
+                        </picture>
                         <img class="square2" src="./img/whatwedoback1.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
 
     <section class="section3" id="news">
         <div class="section3__wrapper">
@@ -334,7 +341,10 @@
             </div>
             <div class="section4__content">
                 <div class="section4__bigImg">
-                    <img src="./img/big.png" alt="">
+                    <picture>
+                        <img src="./img/big.png" alt="">
+                    </picture>
+
                 </div>
                 <div class="section4__smallImg">
                     <a class="section4__card" href="./img/small1Modal.png">
@@ -363,46 +373,48 @@
 
 
     <footer class="footer">
-        <div class="getInTouch" id="get">
-            <hr>
-            <h4 class="getInTouch__title">get in touch</h4>
-            <div class="getInTouch__content">
-                <div class="getInTouch__contact">
-                    <p class="contact__item"><img src="./img/phone.svg">91 Nolan Extensions Suite 670</p>
-                    <p class="contact__item"><img src="./img/phone.svg">91 Nolan Extensions Suite 670</p>
-                    <p class="contact__item"><img src="./img/phone.svg">91 Nolan Extensions Suite 670</p>
-                    <p class="contact__item"><img src="./img/phone.svg">91 Nolan Extensions Suite 670</p>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <a href="#" target="_blank">
+                        <img src="./img/headLogo.svg" alt="Monticello" /></a>
                 </div>
-                <form action="" class="getInTouch__form">
-                    <input type="text" class="getInTouch__name" placeholder="Your name" name="name">
-                    <input type="email" class="getInTouch__email" placeholder="Your email" name="email">
-                    <button class="getInTouch__btn" type="submit">sumbit</button>
-                </form>
+                <div class="footer__links">
+                    <a href="#" class="footer__link" target="_blank">
+                        <img src="./img/facebook.svg" alt="" />
+                    </a>
+                    <a href="#" class="footer__link" target="_blank">
+                        <img src="./img/twitter.svg" alt="" />
+                    </a>
+                    <a href="#" class="footer__link" target="_blank">
+                        <img src="./img/instagram.svg" alt="" />
+                    </a>
+                </div>
+                <div class="footer__copy gothambook">
+                    <p>
+                        Copyrights &copy; 2017 Monticello Made
+                        with
+                        <img src="./img/heart.svg" alt="heart" />
+                        by Ga Huy
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="footer__inner">
-            <div class="footer__logo">
-                <a href="#" target="_blank">
-                    <img src="./img/headLogo.svg" alt="Monticello" /></a>
-            </div>
-            <div class="footer__links">
-                <a href="#" class="footer__link" target="_blank">
-                    <img src="./img/facebook.svg" alt="" />
-                </a>
-                <a href="#" class="footer__link" target="_blank">
-                    <img src="./img/twitter.svg" alt="" />
-                </a>
-                <a href="#" class="footer__link" target="_blank">
-                    <img src="./img/instagram.svg" alt="" />
-                </a>
-            </div>
-            <div class="footer__copy gothambook">
-                <p>
-                    Copyrights &copy; 2017 Monticello Made
-                    with
-                    <img src="./img/heart.svg" alt="heart" />
-                    by Ga Huy
-                </p>
+            <div class="getInTouch" id="get">
+                <hr>
+                <h4 class="getInTouch__title">get in touch</h4>
+                <div class="getInTouch__content">
+                    <div class="getInTouch__contact">
+                        <p class="contact__item"><img src="./img/phone.svg">91 Nolan Extensions Suite 670</p>
+                        <p class="contact__item"><img src="./img/phone.svg">91 Nolan Extensions Suite 670</p>
+                        <p class="contact__item"><img src="./img/phone.svg">91 Nolan Extensions Suite 670</p>
+                        <p class="contact__item"><img src="./img/phone.svg">91 Nolan Extensions Suite 670</p>
+                    </div>
+                    <form action="" class="getInTouch__form">
+                        <input type="text" class="getInTouch__name" placeholder="Your name" name="name">
+                        <input type="email" class="getInTouch__email" placeholder="Your email" name="email">
+                        <button class="getInTouch__btn" type="submit">sumbit</button>
+                    </form>
+                </div>
             </div>
         </div>
     </footer>

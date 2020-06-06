@@ -10,7 +10,6 @@
 
     &__wrapper {
       box-sizing: border-box;
-      width: 1170px; 
       position: relative;
       padding-bottom: 70px;
 
@@ -108,12 +107,17 @@
       
 
       &__block {
-        width: 1170px;
+        max-width: 1180px;
         margin: auto;
         display: flex;
         flex-direction: row ;
         justify-content: space-between;
-        position: relative; }
+        position: relative;
+      
+      @media screen and (max-width:1350px) {
+        max-width: 960px;
+        
+      }}
       
 
 

@@ -4,7 +4,8 @@
     box-sizing: border-box;
     background: url(../img/footerBg.png);
     background-size: cover;
-    &__inner {
+    position: relative;
+    &__wrapper {
       width: 770px;
       margin: auto;
       display: flex;
@@ -12,6 +13,7 @@
       align-items: flex-start;
       flex-wrap: wrap;
       color: #fff;
+
       a {
         text-decoration: none;
       }
