@@ -114,24 +114,20 @@
         justify-content: space-between;
         position: relative;
       
-      @media screen and (max-width:1350px) {
-        max-width: 960px;
-        
-      }}
+      }
       
 
 
       &__item {
         margin-left: 30px;
-        min-width: 370px;
-        width: 370px;
+        max-width: 370px;
         height: 515px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         color: #2c4058;
         background-color: #fff;
-        position: relative; 
+        position: relative;
       }
     }
       

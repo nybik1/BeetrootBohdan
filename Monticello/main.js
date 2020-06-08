@@ -4,14 +4,16 @@ $(document).ready(function () {
         infinite: true,
         variableWidth: true,
         arrows: false,
-        centerMode: true,
+        centerMode: false,
         autoplay: false,
         autoplaySpeed: 1000,
+        slidesToShow: 3,
+        focusOnSelect: false,
         responsive: [
             {
                 breakpoint: 1350,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     dots: false,
                 }
             }
@@ -38,10 +40,7 @@ $(document).ready(function () {
 
 
 
-
-
-
-
+/// Popup plugin
 $(document).ready(function () {
     $(".section4__card").magnificPopup({
         type: "image",
@@ -50,49 +49,64 @@ $(document).ready(function () {
     });
 });
 
+////add&remove active status on link
+$(".header__menu a[href^=#], .section1__scrollDown a").on('click', function (event) {
+    event.preventDefault();
+
+    $('.header__menu .link.active').removeClass('active');
+    $(this).children('.link').addClass('active');
+
+    const target = $($(this).attr('href'));
+    $('html,body').animate({ scrollTop: $(target).offset().top }, 'slow');
+});
+
+function handleScroll(selector, scrollTop) {
+    const $selector = $(selector);
+    const top = $selector.offset().top - 100;
+
+    if (top <= scrollTop && $selector.height() + top >= scrollTop) {
+        $('.header__menu .link.active').removeClass('active');
+        $(`[href="${selector}"]`).children('.link').addClass('active');
+    }
+}
+
+function debounce(func, wait, immediate) {
+    var timeout;
+    return function () {
+        var context = this, args = arguments;
+        var later = function () {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+    };
+};
+
+$(document).on('scroll', debounce(function (e) {
+    const scrollTop = $(this).scrollTop();
+    if (scrollTop > 10) {
+        $('.header').addClass('')
+        // header
+    }
+    handleScroll('#about', scrollTop);
+    handleScroll('#projects', scrollTop);
+    handleScroll('#news', scrollTop);
+    handleScroll('#get', scrollTop);
+}, 200));
 
 
-
-
-$('a[href*="#"]')
-    // Remove links that don't actually link to anything
-    .not('[href="#"]')
-    .not('[href="#0"]')
-    .click(function (event) {
-        // On-page links
-        if (
-            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-            &&
-            location.hostname == this.hostname
-        ) {
-            // Figure out element to scroll to
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            // Does a scroll target exist?
-            if (target.length) {
-                // Only prevent default if animation is actually gonna happen
-                event.preventDefault();
-                $('html, body').animate({
-                    scrollTop: target.offset().top
-                }, 1000, function () {
-                    // Callback after animation
-                    // Must change focus!
-                    var $target = $(target);
-                    $target.focus();
-                    if ($target.is(":focus")) { // Checking if the target was focused
-                        return false;
-                    } else {
-                        $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                        $target.focus(); // Set focus again
-                    };
-                });
-            }
-        }
-    });
-
-
-
-
+//// Sticky menu
+let menuPosition = $('.header').offset().top;
+$(window).scroll(function () {
+    let menuTop = $(window).scrollTop();
+    if (menuPosition < menuTop) {
+        $('.header').addClass('sticky')
+    }
+    else { $('.header').removeClass('sticky') }
+})
 
 
 
