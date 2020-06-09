@@ -6,14 +6,55 @@
     background-size: cover;
     justify-content: center;
     align-items: center;
+    width: 100%;
     @media screen and(max-width:1000px){
         flex-direction: column;
+        padding: 0px;
+    }
+
+    &__burger{
+        cursor: pointer;
+        img{
+            width: 36px;
+            height: 36px;
+        }
+        @media screen and(min-width:767px){
+            display: none;
+        }
+    }
+
+    &__menu {
+        transition:  0.3s ease;
+        font-family: "Gothambook";
+        @media screen and(max-width:767px){
+            position: relative;
+        }
+        @media screen and(max-width:500px){
+            width: 100%;
+        }
+     
+    }
+    &__menu-tooggler{
+        opacity: 1;
+        @media screen and(max-width:767px){
+            opacity: 0;
+        }
+        transition:  0.3s ease;
+    }
+
+    &__wrapper{
+        @media screen and(max-width:767px){
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            align-items: center;
+            margin-bottom: 10px;
+        }
     }
 
 
 
         .menu__list{
-            font-family: "Gotham - Book";
             list-style: none;
             display: flex;
             color: #fff;
@@ -25,6 +66,12 @@
             @media screen and(max-width:1000px){
                 margin-bottom: 30px;
             }
+            @media screen and(max-width:1000px){
+                margin-bottom: 0px;
+            }
+            @media screen and(max-width:500px){
+                font-size: 12px;
+            }
 
         .menu__item{
             :not(:last-child){
@@ -32,15 +79,11 @@
                 @media screen and(max-width:1250px) {
                     margin-left: 20px;
                 }
-                @media screen and(max-width:1000px){
-                    margin-left: 60px;
-                }
-                @media screen and(max-width:670px){
-                    margin-left: 20px;
+                @media screen and(max-width:500px){
+                    margin-left: 0px;
                 }
             }
             scroll-behavior: smooth;
-            transition: 0.5s ease;
             cursor: pointer;
         }    
 
@@ -63,6 +106,9 @@
             border: 1px #fff solid;
             border-radius: 50%;
             top: -2px;
+            @media screen and(max-width:500px){
+                margin-right: 5px;
+            }
         }
         .active {
             width: 9px;
@@ -72,6 +118,9 @@
             top: -2px;
             background-color: #fff;
             border-radius: 50%;
+            @media screen and(max-width:500px){
+                margin-right: 5px;
+            }
         }
         }
 
@@ -80,6 +129,9 @@
         margin-left: 84px;
         @media screen and(max-width:1250px){
             margin-left: 40px;
+        }
+        @media screen and(max-width:1000px){
+            display: none;
         }
         :not(:first-child){
             padding-left: 20px;
@@ -95,7 +147,7 @@
     position: relative;
 
     &__title {
-        font-family: Gotham;
+        font-family: "Gotham";
         font-size: 80px;
         font-weight: 700;
         text-transform: uppercase;
@@ -114,7 +166,7 @@
 
     &__subtitle {
         color: #ffffff;
-        font-family: "Gotham - Book";
+        font-family: "Gothambook";
         font-size: 18px;
         font-weight: 400;
         line-height: 22px;
@@ -174,6 +226,10 @@
     position: fixed;
     top: 0;
     z-index: 5;
+    transition:  0.3s ease;
     background: linear-gradient(90deg, rgba(84,116,253,1) 29%, rgba(132,0,255,1) 54%);
+    @media screen and(max-width:767px){
+        padding: 0px;
+    }
 } 
 

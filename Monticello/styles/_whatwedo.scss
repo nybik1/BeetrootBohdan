@@ -13,7 +13,7 @@
 
     &__title {
         color: #2c4058;
-        font-family: Gotham;
+        font-family: "Gotham";
         font-size: 44px;
         font-weight: 700;
         line-height: 22px;
@@ -26,6 +26,12 @@
         @media screen and(max-width:640px){
             margin-bottom: 60px;
         }
+}
+&__block1, &__block2 {
+    @media screen and(max-width:640px){
+        max-width: 360px;
+        margin: auto;
+    }
 }
 
     &__content {
@@ -76,6 +82,7 @@
             line-height: 24px;
             text-transform: uppercase;
             margin-bottom: 18px;
+            font-family: "Gothambook";
             @media screen and(max-width:960px){
                 font-size: 18px;
             }
@@ -90,7 +97,7 @@
             font-weight: 700;
             line-height: 24px;
             text-transform: uppercase;
-            font-family: "Gotham Bold";
+            font-family: "Gothambold";
             margin-bottom: 40px;
             @media screen and(max-width:1090px){
                 font-size: 35px;

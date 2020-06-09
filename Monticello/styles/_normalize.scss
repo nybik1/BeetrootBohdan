@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    padding: 0 5px;
     box-sizing: border-box;
 
   }
@@ -14,9 +13,17 @@ body {
     margin: 0;
     padding: 0;
   }
+  ul{
+    padding: 0;
+    margin: 0;
+  }
+  a{
+    padding: 0;
+    margin: 0;
+  }
 
   .container{
-    max-width: 1180px;
+    max-width: 1170px;
     margin: auto;
   }
 
@@ -41,6 +48,6 @@ body {
         }
   }
 
-  // .body-wrapper{
-  //   overflow: hidden;
-  // }
+  .body-wrapper{
+    overflow: hidden;
+  }

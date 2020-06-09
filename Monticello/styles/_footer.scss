@@ -5,14 +5,24 @@
     background: url(../img/footerBg.png);
     background-size: cover;
     position: relative;
+    font-family: "Gotham";
+    @media screen and(max-width:470px){
+      padding: 325px 0 10px;
+    }
+  
     &__wrapper {
-      width: 770px;
+      max-width: 770px;
       margin: auto;
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
       flex-wrap: wrap;
       color: #fff;
+      @media screen and(max-width:800px){
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+      }
 
       a {
         text-decoration: none;
@@ -26,6 +36,9 @@
       display: flex;
       flex-flow: row nowrap;
       justify-content: flex-end;
+      @media screen and(max-width:470px){
+        margin-top: 10px;
+      }
     }
     &__link + &__link {
       margin-left: 20px;
