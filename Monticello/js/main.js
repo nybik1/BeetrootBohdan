@@ -31,10 +31,10 @@ $(document).ready(function () {
 
             },
             {
-                breakpoint: 400,
+                breakpoint: 767,
                 settings: {
                     slidesToShow: 1,
-                    dots: false,
+                    dots: true,
                 }
 
             }

@@ -25,7 +25,10 @@
         
 
       .slick-dots li {
-        margin: 0 40px; }
+        margin: 0 40px;
+        @media screen and(max-width:767px){
+          margin: 0 10px;
+        } }
       
 
       .slick-dots button {
