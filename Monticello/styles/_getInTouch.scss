@@ -63,8 +63,13 @@
         font-size: 18px;
         font-weight: 400;
         line-height: 34px;
+        display: flex;
+        align-items: center;
         @media screen and(max-width:767px){
             font-size: 14px;
+        }
+        img {
+            padding-right: 10px;
         }
     }
 }

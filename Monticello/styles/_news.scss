@@ -7,6 +7,9 @@
     display: flex;
     justify-content: center; 
     padding: 100px 0;
+    @media screen and(max-width:767px){
+      padding: 40px 0;
+    }
 
     &__wrapper {
       box-sizing: border-box;
@@ -102,7 +105,13 @@
         text-align: center;
         margin-bottom: 100px;
         margin-top: 40px;
-        font-family: "Gotham"; }
+        font-family: "Gotham";
+        @media screen and(max-width:400px){
+          font-size: 36px;
+          margin-bottom: 50px;
+        }
+      }
+  
       
 
       &__title hr {
@@ -124,6 +133,9 @@
         }
         @media screen and(max-width:930px){
           width: 370px;
+        }
+        @media screen and(max-width:400px){
+          width: 290px;
         }
       
       }
@@ -194,7 +206,11 @@
         text-transform: uppercase;
         padding: 0 20px;
         box-sizing: border-box;
-        font-family: "Gotham"; }
+        font-family: "Gotham";
+        @media screen and(max-width:400px){
+          font-size: 16px;
+          max-width: 300px;
+        } }
 
       .news__text {
         font-family: "Open Sans", sans-serif;
@@ -205,7 +221,11 @@
         overflow: hidden;
         height: 60px;
         width: 100%;
-        background-color: #fff; }
+        background-color: #fff;
+        @media screen and(max-width:400px){
+          font-size: 15px;
+          max-width: 300px;
+        } }
       
 
       .news__zoom {
@@ -217,7 +237,10 @@
         transform: translateX(-50%);
         border: 1px solid #fff;
         border-radius: 50%;
-        cursor: pointer; }
+        cursor: pointer;
+        @media screen and(max-width:400px){
+          left: 40%;
+        } }
         
       .news__zoom p {
         width: 100%;

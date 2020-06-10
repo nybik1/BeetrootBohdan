@@ -79,13 +79,13 @@ $(".header__menu a[href^=#], .section1__scrollDown a").on('click', function (eve
     $(this).children('.link').addClass('active');
 
     const target = $($(this).attr('href'));
-    $('html,body').animate({ scrollTop: $(target).offset().top }, 'slow');
+    $('html,body').animate({ scrollTop: $(target).offset().top - 10 }, 'slow');
 });
 
 //// reduce call time
 function handleScroll(selector, scrollTop) {
     const $selector = $(selector);
-    const top = $selector.offset().top - 100;
+    const top = $selector.offset().top;
 
     if (top <= scrollTop && $selector.height() + top >= scrollTop) {
         $('.header__menu .link.active').removeClass('active');
