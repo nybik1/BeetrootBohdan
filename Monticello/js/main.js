@@ -126,8 +126,12 @@ $(window).scroll(function () {
     let menuTop = $(window).scrollTop();
     if (menuPosition < menuTop) {
         $('.header').addClass('sticky')
+        $('.header__menu').addClass('header__menu-scrolled')
     }
-    else { $('.header').removeClass('sticky') }
+    else {
+        $('.header').removeClass('sticky')
+        $('.header__menu').removeClass('header__menu-scrolled')
+    }
 });
 
 

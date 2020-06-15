@@ -109,9 +109,11 @@
         margin-bottom: 100px;
         margin-top: 40px;
         font-family: "Gotham";
+        @media screen and(max-width:640px){
+          margin-bottom: 50px;
+        }
         @media screen and(max-width:400px){
           font-size: 36px;
-          margin-bottom: 50px;
         }
       }
   
