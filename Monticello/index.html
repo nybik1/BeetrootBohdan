@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./libs/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="./libs/slick/slick-theme.css" />
     <link rel="stylesheet" href="./libs/popup/magnific-popup.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
@@ -21,10 +22,10 @@
                         <img src="./img/headLogo.svg" alt="OurLogo">
                     </div>
                     <div class="header__burger">
-                        <img src="./img/burger.svg" alt="">
+                        <img src="./img/burger.svg" draggable="false" alt="">
                     </div>
                 </div>
-                <div class="header__menu header__menu-tooggler">
+                <div class="header__menu">
                     <ul class="menu__list">
                         <li class="menu__item">
                             <a href="#about" class="menu__link">
@@ -55,20 +56,27 @@
                 <div class="header__links">
                     <div class="header__link-wrapper">
                         <a href="#" class="header__link" target="_blank">
-                            <img src="./img/facebook2.svg" alt="" />
+                            <svg class="social-icon" height="23" width="23" fill="#fff">
+                                <use xlink:href="./img/icons.svg#facebook2"></use>
+                            </svg>
                         </a>
                     </div>
                     <div class="header__link-wrapper">
                         <a href="#" class="header__link" target="_blank">
-                            <img src="./img/twitter.svg" alt="" />
+                            <svg class="social-icon" height="23" width="23" fill="#fff">
+                                <use xlink:href="./img/icons.svg#twitter"></use>
+                            </svg>
                         </a>
                     </div>
                     <div class="header__link-wrapper">
                         <a href="#" class="header__link" target="_blank">
-                            <img src="./img/instagram.svg" alt="" />
+                            <svg class="social-icon" height="23" width="23" fill="#fff">
+                                <use xlink:href="./img/icons.svg#instagram"></use>
+                            </svg>
                         </a>
                     </div>
                 </div>
+                <!-- <img src="./img/instagram.svg" alt="" /> -->
             </header>
             <div class="container">
                 <div class="section1__slider">
@@ -394,17 +402,23 @@
                     <div class="footer__links">
                         <div class="footer__link-wrapper">
                             <a href="#" class="footer__link" target="_blank">
-                                <img src="./img/facebook2.svg" alt="" />
+                                <svg class="social-icon" height="20" width="20" fill="#fff">
+                                    <use xlink:href="./img/icons.svg#facebook2"></use>
+                                </svg>
                             </a>
                         </div>
                         <div class="footer__link-wrapper">
                             <a href="#" class="footer__link" target="_blank">
-                                <img src="./img/twitter.svg" alt="" />
+                                <svg class="social-icon" height="20" width="20" fill="#fff">
+                                    <use xlink:href="./img/icons.svg#twitter"></use>
+                                </svg>
                             </a>
                         </div>
                         <div class="footer__link-wrapper">
                             <a href="#" class="footer__link" target="_blank">
-                                <img src="./img/instagram.svg" alt="" />
+                                <svg class="social-icon" height="20" width="20" fill="#fff">
+                                    <use xlink:href="./img/icons.svg#instagram"></use>
+                                </svg>
                             </a>
                         </div>
                     </div>

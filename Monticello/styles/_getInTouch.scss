@@ -88,8 +88,12 @@
             border-bottom: 1px #2c4058 solid;
             height: 50px;
             width: 100%;
+            &:focus{
+                border: 2px solid #7E5AFF;
+                border-radius: 5px;
+            }
+            }
         }
-    }
     &__name {
         margin-bottom: 40px;
         @media screen and(max-width:767px){

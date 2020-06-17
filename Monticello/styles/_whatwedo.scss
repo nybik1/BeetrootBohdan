@@ -1,7 +1,10 @@
 .section2 {
     padding: 100px 0 140px;
+    @media screen and(max-width:1000px){
+        padding: 100px 5px 140px; 
+    }
     @media screen and(max-width:640px){
-        padding: 50px 0 70px;
+        padding: 50px 5px 70px;
     }
     
     &__header hr{

@@ -1,13 +1,19 @@
 ////show&close menu
 $('.header__burger').click(function () {
-    $('.header__menu').toggleClass('header__menu-tooggler')
+    $('.header__menu').toggleClass('header__menu-tooggler');
+    $('.header__menu').toggleClass('header__menu-scrolled');
+    $('.container , .section3, #map').toggleClass('blur');
+    if (!$('.header').hasClass('sticky')) {
+        $('.header').addClass('sticky');
+    }
 });
 
 /// close menu when click on anchor
-let menu = document.querySelector('.header__menu');
-menu.addEventListener('click', (event) => {
-    menu.classList.add('header__menu-tooggler')
-});
+$('.menu__item').click(function () {
+    $('.header__menu').toggleClass('header__menu-tooggler');
+    $('.header__menu').toggleClass('header__menu-scrolled');
+    $('.container , .section3, #map').toggleClass('blur');
+})
 
 
 //slick slider
@@ -79,7 +85,7 @@ $(".header__menu a[href^=#], .section1__scrollDown a").on('click', function (eve
     $(this).children('.link').addClass('active');
 
     const target = $($(this).attr('href'));
-    $('html,body').animate({ scrollTop: $(target).offset().top - 10 }, 'slow');
+    $('html,body').animate({ scrollTop: $(target).offset().top - 70 }, 'slow');
 });
 
 //// reduce call time
@@ -126,11 +132,9 @@ $(window).scroll(function () {
     let menuTop = $(window).scrollTop();
     if (menuPosition < menuTop) {
         $('.header').addClass('sticky')
-        $('.header__menu').addClass('header__menu-scrolled')
     }
     else {
         $('.header').removeClass('sticky')
-        $('.header__menu').removeClass('header__menu-scrolled')
     }
 });
 

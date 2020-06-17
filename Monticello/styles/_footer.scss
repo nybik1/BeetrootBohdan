@@ -47,9 +47,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
         &:hover  {
             background: linear-gradient(90deg,rgba(96,103,134,0.5) 29%,rgba(132,0,255,0.5) 54%);
           }
+        &:hover .social-icon{
+          fill:#55B7FF;
+        }  
         }
 
     &__links {
