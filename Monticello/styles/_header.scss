@@ -1,0 +1,281 @@
+.header{
+    display: flex;
+    padding-top: 53px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    @media screen and(max-width:1000px){
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    &__burger{
+        cursor: pointer;
+        img{
+            width: 48px;
+            height: 48px;
+        }
+        @media screen and(min-width:769px){
+            display: none;
+        }
+    }
+
+    &__menu {
+        transition:  0.3s ease;
+        font-family: "Gothambook";
+        @media screen and(max-width:768px){
+            position: absolute;
+            top: -1000%;
+        }
+        @media screen and(max-width:500px){
+            width: 100%;
+        }
+
+     
+    }
+    &__menu-tooggler{
+        opacity: 1;
+        top: 70px;
+        transition:  0.3s ease;
+        @media screen and(max-width:768px){
+            display: flex;
+            flex-direction: column;
+            width: 100%;}
+    }
+
+    &__wrapper{
+        @media screen and(max-width:768px){
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+    }
+
+
+
+        .menu__list{
+            list-style: none;
+            display: flex;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14px;
+            text-transform: uppercase;
+            justify-content: space-around;
+            @media screen and(max-width:1000px){
+                margin-bottom: 30px;
+            }
+            @media screen and(max-width:1000px){
+                margin-bottom: 0px;
+            }
+            @media screen and(max-width:768px){
+                flex-direction: column;
+                font-size: 20px;
+                line-height: 20px;
+                justify-content: center;
+                align-items: center;
+                font-weight: 1000;
+                letter-spacing: 3px;
+            }
+            @media screen and(max-width:500px){
+                font-size: 12px;
+            }
+
+        .menu__item{
+            :not(:last-child){
+                margin-left: 68px;
+                @media screen and(max-width:1250px) {
+                    margin-left: 20px;
+                }
+            }
+            @media screen and(max-width:768px){
+                width: 48px;
+                height: 48px;
+                margin-left: 0px;
+            }
+            scroll-behavior: smooth;
+            cursor: pointer;
+        }    
+
+        .menu__link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+            color: #fff;
+            text-decoration: none;
+            transition: 0.5s ease;
+            &:hover{
+                text-decoration: underline;
+                color: #55B7FF;
+            }
+        }
+            
+       
+        .link{
+            width: 9px;
+            height: 9px;
+            margin-right: 14px;
+            position: relative;
+            background-color: transparent;
+            border: 1px #fff solid;
+            border-radius: 50%;
+            top: -2px;
+            @media screen and(max-width:768px){
+                display: none;
+            }
+        }
+        .active {
+            width: 9px;
+            height: 9px;
+            margin-right: 14px;
+            position: relative;
+            top: -2px;
+            background-color: #fff;
+            border-radius: 50%;
+            @media screen and(max-width:500px){
+                margin-right: 5px;
+            }
+        }
+        }
+
+
+&__link-wrapper{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover .social-icon {
+        fill:#55B7FF;
+}
+}
+
+    &__links {
+        margin-left: 84px;
+        width: 160px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        @media screen and(max-width:1000px) {
+            margin: 10px 0 0 0 ;
+            }
+        @media screen and(max-width:1000px){
+            display: none;
+        }
+}
+}
+
+.section1{
+    background-image: url(../img/headerBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 53px 0 53px;
+    position: relative;
+
+    &__title {
+        font-family: "Gotham";
+        font-size: 80px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #fff;
+        text-align: center;
+        margin-top: 263px;
+        @media screen and(max-width:1024px){
+            margin-top: 100px;
+            font-size: 60px;
+        }
+        @media screen and(max-width:500px){
+            font-size: 40px;
+            margin-top: 50px;
+        }
+    }
+
+    &__subtitle {
+        color: #ffffff;
+        font-family: "Gothambook";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        text-transform: uppercase;
+        letter-spacing: 5.4px;
+        text-align: center;
+        margin-top: 39px;
+        @media screen and(max-width:1024px){
+            font-size: 15px;
+        }
+        @media screen and(max-width:500px){
+            font-size: 12px;
+        }
+    }
+
+    &__scrollDown{
+        text-align: center;
+        margin-top: 230px;
+        @media screen and(max-width:1024px){
+            margin-top: 70px;
+        }
+        @media screen and(max-width:650px){
+            margin-top: 0px;
+        }
+    }
+
+    &__slider{
+        .slick-dots{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            width: 30px;
+            top: 50%;
+            right: -250px;
+        }
+    .slick-dots li {
+    margin: 20px 0px; }
+    }
+    .slick-dots button {
+        display: block;
+        padding: 0;
+        border: 1px solid #fff;
+        border-radius: 100%;
+        width: 9px;
+        height: 9px;
+        background-color: transparent;
+        }
+    .slick-dots li.slick-active button {
+        background-color: #fff; }
+        
+    .slick-dots li button:before {
+        font-size: 0px;
+    }  
+}
+
+.sticky {
+    padding: 5px 0;
+    transition:  0.3s ease;
+    background: linear-gradient(90deg, rgba(96, 103, 134,0.5) 29%, rgba(132,0,255,0.5) 54%);
+    @media screen and(max-width:768px){
+        padding: 1px;
+    }
+    
+}
+.header__menu-scrolled{
+    @media screen and(max-width:768px){
+        transition: 0.3s ease;
+        background: linear-gradient(90deg, rgba(96, 103, 134,0.5) 29%, rgba(132,0,255,0.5) 54%);
+    }
+    
+} 
+

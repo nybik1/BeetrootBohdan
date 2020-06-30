@@ -1,0 +1,89 @@
+.footer {
+    padding: 205px 0 205px;
+    width: 100%;
+    box-sizing: border-box;
+    background: url(../img/footerBg.png);
+    background-size: cover;
+    position: relative;
+    font-family: "Gotham";
+    p{
+      @media screen and(max-width:767px){
+        text-align: center;
+      }
+    }
+    @media screen and(max-width:800px){
+      padding: 205px 0 10px;
+    }
+    @media screen and(max-width:470px){
+      padding: 325px 0 10px;
+    }
+  
+    &__wrapper {
+      max-width: 770px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      color: #fff;
+      @media screen and(max-width:800px){
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+    &__logo {
+      flex: 0 0 50%;
+    }
+    &__link-wrapper{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        &:hover  {
+            background: linear-gradient(90deg,rgba(96,103,134,0.5) 29%,rgba(132,0,255,0.5) 54%);
+          }
+        &:hover .social-icon{
+          fill:#55B7FF;
+        }  
+        }
+
+    &__links {
+      max-width: 160px;
+      flex: 0 0 50%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      @media screen and(max-width:800px){
+        width: 160px;
+        margin-top: 10px;
+      }
+    }
+    &__link + &__link {
+      margin-left: 20px;
+    }
+    &__copy {
+      margin-top: 50px;
+      flex: 0 0 100%;
+      font-size: 14px;
+      line-height: 22px;
+      img {
+        width: 15px;
+        height: 12px;
+      }
+    }
+
+
+
+}
+#map{
+  width: 100%;
+  height: 700px;}
