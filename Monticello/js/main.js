@@ -13,8 +13,12 @@ $('.menu__item').click(function () {
     $('.header__menu').toggleClass('header__menu-tooggler');
     $('.header__menu').toggleClass('header__menu-scrolled');
     $('.container , .section3, #map').toggleClass('blur');
+    $('body').removeClass('scrollOff');
 })
 
+$('.header__burger').click(function () {
+    $('body').toggleClass('scrollOff')
+})
 
 //slick slider
 $(document).ready(function () {
